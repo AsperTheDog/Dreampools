@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7tqa8mbld8at"]
+
+[ext_resource type="PackedScene" uid="uid://b3msjhvecsdeu" path="res://Pool-Pack/Models/wall.glb" id="1_ra71a"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_rextb"]
+
+[node name="wall2" instance=ExtResource("1_ra71a")]
+
+[node name="wall" parent="." index="0"]
+material_override = ExtResource("2_rextb")

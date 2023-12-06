@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://f7l4v0ea7jib"]
+
+[ext_resource type="PackedScene" uid="uid://dornpxjclx8t2" path="res://Pool-Pack/Models/stairs-snail.glb" id="1_o2jim"]
+
+[node name="stairs-snail2" instance=ExtResource("1_o2jim")]

@@ -1,0 +1,30 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://d0y140wheshhh"]
+
+[ext_resource type="Texture2D" uid="uid://dtecolp7uprju" path="res://Pool-Pack/Models/pool_albedo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cmn2w3n17sayu" path="res://Pool-Pack/Models/pool_orm.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cfmqy8n6puhxm" path="res://Pool-Pack/Models/pool_normal.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://daw1qgp5s2vd0" path="res://Pool-Pack/Models/pool_heightmap.png" id="4"]
+
+[resource]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1")
+roughness_texture = ExtResource("2")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.5
+normal_texture = ExtResource("3")
+ao_enabled = true
+ao_light_affect = 0.5
+ao_texture = ExtResource("2")
+heightmap_enabled = true
+heightmap_scale = 0.1
+heightmap_texture = ExtResource("4")
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 0.1
+subsurf_scatter_transmittance_depth = 7.38
+subsurf_scatter_transmittance_boost = 0.81
+refraction_scale = -1.0
+texture_filter = 2
+proximity_fade_distance = 0.0
+distance_fade_max_distance = 2.0

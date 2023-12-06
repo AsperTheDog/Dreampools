@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgtu35ro16vu2"]
+
+[ext_resource type="PackedScene" uid="uid://bbgc32v0k6llh" path="res://Pool-Pack/Models/ceiling.glb" id="1_oeh8j"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_e4p6i"]
+
+[node name="ceiling2" instance=ExtResource("1_oeh8j")]
+
+[node name="ceiling" parent="." index="0"]
+material_override = ExtResource("2_e4p6i")

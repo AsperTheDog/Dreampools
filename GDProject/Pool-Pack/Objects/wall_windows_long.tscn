@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6ehiew7bohw2"]
+
+[ext_resource type="PackedScene" uid="uid://038kawl2q12f" path="res://Pool-Pack/Models/wall-windows-long.glb" id="1_uxxcv"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_i58rf"]
+
+[node name="wall-windows-long2" instance=ExtResource("1_uxxcv")]
+
+[node name="wall-windows-long" parent="." index="0"]
+material_override = ExtResource("2_i58rf")

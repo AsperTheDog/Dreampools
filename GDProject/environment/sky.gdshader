@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode depth_draw_always, unshaded;
+render_mode unshaded;
 
 group_uniforms skybox;
 uniform float environment_multiplier = 1.0;

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp7cal0oana7j"]
+
+[ext_resource type="PackedScene" uid="uid://b6ux7pvbttdcb" path="res://Pool-Pack/Models/bridge.glb" id="1_ucva0"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_dtwf0"]
+
+[node name="bridge2" instance=ExtResource("1_ucva0")]
+
+[node name="bridge" parent="." index="0"]
+material_override = ExtResource("2_dtwf0")

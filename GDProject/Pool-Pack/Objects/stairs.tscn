@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://e0e14tpuqxv8"]
+
+[ext_resource type="PackedScene" uid="uid://b7j2cnv2dj2cu" path="res://Pool-Pack/Models/stairs.glb" id="1_f4t1f"]
+
+[node name="stairs2" instance=ExtResource("1_f4t1f")]

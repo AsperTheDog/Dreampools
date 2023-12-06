@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://tt4lu3tsovwd"]
+
+[ext_resource type="PackedScene" uid="uid://ceauft5p6ulcm" path="res://Pool-Pack/Models/column-cilinder-base.glb" id="1_wjbvd"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_7n75y"]
+
+[node name="column-cilinder-base2" instance=ExtResource("1_wjbvd")]
+
+[node name="column-cilinder-base" parent="." index="0"]
+material_override = ExtResource("2_7n75y")

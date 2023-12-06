@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://tc6e76qa6hjr"]
+
+[ext_resource type="PackedScene" uid="uid://b1cuw8ax0crt6" path="res://Pool-Pack/Models/wall-medium-door.glb" id="1_xuxm7"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_etlcq"]
+
+[node name="wall-medium-door2" instance=ExtResource("1_xuxm7")]
+
+[node name="wall-medium-door" parent="." index="0"]
+material_override = ExtResource("2_etlcq")

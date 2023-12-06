@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dypmthvkpx2xs"]
+
+[ext_resource type="PackedScene" uid="uid://cf6unigk6wm1k" path="res://Pool-Pack/Models/floor.glb" id="1_2ko7s"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_ss7xu"]
+
+[node name="floor2" instance=ExtResource("1_2ko7s")]
+
+[node name="floor" parent="." index="0"]
+material_override = ExtResource("2_ss7xu")

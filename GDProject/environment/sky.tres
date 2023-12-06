@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://b28t6y52p7npy"]
+
+[ext_resource type="Shader" path="res://environment/sky.gdshader" id="1_38mge"]
+[ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="2_qs2kd"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_38mge")
+shader_parameter/environment_multiplier = 1.0
+shader_parameter/environmentMap = ExtResource("2_qs2kd")
+shader_parameter/brightness = 0.0
+shader_parameter/saturation = 1.0
+shader_parameter/contrast = 1.0

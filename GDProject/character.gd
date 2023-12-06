@@ -7,9 +7,9 @@ extends CharacterBody3D
 
 var current_speed := 5.0
 
-const walking_speed := 10.0
-const sprinting_speed := 15.0
-const crouching_speed := 5.0
+const walking_speed := 5.0
+const sprinting_speed := 7.0
+const crouching_speed := 3.0
 
 const jump_prep_crouch := -0.2
 const jump_velocity := 8
@@ -99,8 +99,8 @@ func applyBob(delta):
 		intensity = lerp(intensity, inverse_lerp(0, sprinting_speed, velocity.length()), 0.3)
 	else:
 		intensity = lerp(intensity, inverse_lerp(0, sprinting_speed, 0.0), 0.3)
-	time += delta * velocity.length() * 0.7
-	var xOffset := sin(time) * 0.3 * intensity
-	var yOffset := sin(time * 2) * 0.1 * intensity
+	time += delta * velocity.length() * 1.5
+	var xOffset := sin(time) * 0.15 * intensity
+	var yOffset := sin(time * 2) * 0.05 * intensity
 	$head/Camera3D.position.x = xOffset
 	$head/Camera3D.position.y = yOffset

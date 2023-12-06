@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqah25gjmplpl"]
+
+[ext_resource type="PackedScene" uid="uid://d0rs3dahyr5g5" path="res://Pool-Pack/Models/stairs-snail-column.glb" id="1_gbvqy"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_hc6jb"]
+
+[node name="stairs-snail-column2" instance=ExtResource("1_gbvqy")]
+
+[node name="stairs-snail-column" parent="." index="0"]
+material_override = ExtResource("2_hc6jb")

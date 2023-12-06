@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ie3judry7q06"]
+
+[ext_resource type="PackedScene" uid="uid://bo2b2o277xath" path="res://Pool-Pack/Models/wall-windows-circle.glb" id="1_pnkv4"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_4pmyf"]
+
+[node name="wall-windows-circle2" instance=ExtResource("1_pnkv4")]
+
+[node name="wall-windows-circle" parent="." index="0"]
+material_override = ExtResource("2_4pmyf")

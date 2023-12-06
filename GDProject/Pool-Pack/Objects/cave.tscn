@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg3f525w7gkea"]
+
+[ext_resource type="PackedScene" uid="uid://dviaycj47i1jc" path="res://Pool-Pack/Models/cave.glb" id="1_debb5"]
+[ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_flqr1"]
+
+[node name="cave2" instance=ExtResource("1_debb5")]
+
+[node name="cave" parent="." index="0"]
+material_override = ExtResource("2_flqr1")
