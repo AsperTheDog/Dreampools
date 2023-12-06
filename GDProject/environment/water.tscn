@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b2fs12jewatto"]
+[gd_scene load_steps=31 format=3 uid="uid://b2fs12jewatto"]
 
 [ext_resource type="Script" path="res://environment/main.gd" id="1_gkc5u"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="1_ihsyo"]
@@ -101,9 +101,6 @@ size = Vector3(17.9609, 1, 6.10132)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qfatp"]
 size = Vector3(1, 5.96851, 17.9948)
-
-[sub_resource type="QuadMesh" id="QuadMesh_fow54"]
-size = Vector2(8.055, 6.055)
 
 [node name="Water" type="Node3D"]
 script = ExtResource("1_gkc5u")
@@ -410,11 +407,3 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.092
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D10"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.27787, 0.438843, -4.56242)
 shape = SubResource("BoxShape3D_qfatp")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.8629, -2.07622, 23.2501)
-material_override = ExtResource("10_xnugt")
-cast_shadow = 0
-ignore_occlusion_culling = true
-gi_mode = 0
-mesh = SubResource("QuadMesh_fow54")
