@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbxtjwgb87j1y"]
+[gd_scene load_steps=4 format=3 uid="uid://bbxtjwgb87j1y"]
 
 [ext_resource type="PackedScene" uid="uid://brcvnandbrun4" path="res://Pool-Pack/Models/column-cilinder.glb" id="1_wouj3"]
 [ext_resource type="Material" uid="uid://d0y140wheshhh" path="res://Pool-Pack/Models/pool.tres" id="2_esnk3"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ucs53"]
+height = 6.26997
+radius = 0.657203
 
 [node name="column-cilinder2" instance=ExtResource("1_wouj3")]
 
 [node name="column-cilinder" parent="." index="0"]
 material_override = ExtResource("2_esnk3")
+
+[node name="StaticBody3D12" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D12" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011083, 2.97724, -0.0018754)
+shape = SubResource("CylinderShape3D_ucs53")

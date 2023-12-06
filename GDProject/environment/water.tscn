@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://b2fs12jewatto"]
+[gd_scene load_steps=32 format=3 uid="uid://b2fs12jewatto"]
 
 [ext_resource type="Script" path="res://environment/main.gd" id="1_gkc5u"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="1_ihsyo"]
@@ -45,7 +45,6 @@ fog_sky_affect = 0.0
 fog_height = -1.0
 fog_height_density = 0.07
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.08
 adjustment_enabled = true
 adjustment_contrast = 1.2
 adjustment_saturation = 1.3
@@ -64,14 +63,6 @@ size = Vector2(15, 12)
 subdivide_width = 30
 subdivide_depth = 30
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_7xc26"]
-render_priority = 0
-shader = ExtResource("7_lg2mh")
-shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
-shader_parameter/Size = Vector2(15, 12)
-shader_parameter/Scale = 5.0
-shader_parameter/EmissionColor = Color(0.356863, 1, 1, 1)
-
 [sub_resource type="PlaneMesh" id="PlaneMesh_hiwkf"]
 size = Vector2(20, 20)
 
@@ -80,11 +71,24 @@ size = Vector2(20.59, 9.32)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8m7ls"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ymjel"]
+render_priority = 0
+shader = ExtResource("7_lg2mh")
+shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
+shader_parameter/Size = Vector2(16, 18)
+shader_parameter/Scale = 5.0
+shader_parameter/EmissionColor = Color(0.356863, 1, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_syt4s"]
+size = Vector2(16, 18)
+subdivide_width = 40
+subdivide_depth = 40
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_22dkm"]
 size = Vector3(6, 1, 1.9209)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t43yl"]
-size = Vector3(14.2893, 1, 8.19165)
+size = Vector3(16.81, 1, 9.82704)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a7cqn"]
 size = Vector3(6, 1, 1.98749)
@@ -98,6 +102,9 @@ size = Vector3(17.9609, 1, 6.10132)
 [sub_resource type="BoxShape3D" id="BoxShape3D_qfatp"]
 size = Vector3(1, 5.96851, 17.9948)
 
+[sub_resource type="QuadMesh" id="QuadMesh_fow54"]
+size = Vector2(8.055, 6.055)
+
 [node name="Water" type="Node3D"]
 script = ExtResource("1_gkc5u")
 
@@ -108,6 +115,7 @@ environment = SubResource("Environment_lgj4m")
 transform = Transform3D(-4.30666e-08, 0.0757967, -0.997123, -7.47993e-09, 0.997123, 0.0757967, 1, 1.07227e-08, -4.23758e-08, 1.22087, 19.7508, 60.7647)
 light_color = Color(1, 0.968627, 0.941176, 1)
 light_energy = 2.0
+light_angular_distance = 0.5
 light_bake_mode = 1
 shadow_enabled = true
 
@@ -146,11 +154,6 @@ transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 6.20504,
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.48508, -2.79694, 7.87676)
 material_override = SubResource("ShaderMaterial_bsmsj")
-mesh = SubResource("PlaneMesh_n0ucb")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Terrain"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.48508, -2.79694, 21.4727)
-material_override = SubResource("ShaderMaterial_7xc26")
 mesh = SubResource("PlaneMesh_n0ucb")
 
 [node name="wall-cave2" parent="Terrain" instance=ExtResource("8_1c5f5")]
@@ -245,10 +248,10 @@ transform = Transform3D(1, 0, 0, 0, 1.01013, 0, 0, 0, 1.00963, -2.80176, -2.5905
 transform = Transform3D(1, 0, 0, 0, 1.009, 0, 0, 0, 1, -2.80156, -2.58999, -1.11808)
 
 [node name="column-cilinder2" parent="Terrain" instance=ExtResource("12_0tuop")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.577, -2.57077, 12.3477)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.39164, -2.57077, 1.1988)
 
 [node name="cave2" parent="Terrain" instance=ExtResource("13_4os30")]
-transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 3.58884, -2.58282, 17.3817)
+transform = Transform3D(1.3279e-07, 0, -1, 0, 1, 0, 1.01263, 0, 1.31134e-07, 3.58884, -2.58282, 17.3583)
 
 [node name="cave3" parent="Terrain" instance=ExtResource("13_4os30")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 9.58884, -2.58282, 23.3816)
@@ -268,6 +271,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58884, -8.58282, 17.3817)
 [node name="wall10" parent="Terrain" instance=ExtResource("9_8dqpq")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.58884, -8.58282, 20.3816)
 
+[node name="wall17" parent="Terrain" instance=ExtResource("9_8dqpq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.5886, -8.58282, 20.3816)
+
 [node name="wall11" parent="Terrain" instance=ExtResource("9_8dqpq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58874, -8.58282, 17.3817)
 
@@ -279,6 +285,9 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5888
 
 [node name="wall14" parent="Terrain" instance=ExtResource("9_8dqpq")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.58874, -8.58282, 26.3816)
+
+[node name="wall18" parent="Terrain" instance=ExtResource("9_8dqpq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.5886, -8.58282, 26.3816)
 
 [node name="wall15" parent="Terrain" instance=ExtResource("9_8dqpq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.588841, -2.58282, 23.3817)
@@ -303,6 +312,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1983, -3.57443, 22.8817)
 
 [node name="floor10" parent="Terrain" instance=ExtResource("4_nx563")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1983, -3.57443, 28.8816)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.12102, -2.81232, 24.6397)
+material_override = SubResource("ShaderMaterial_ymjel")
+mesh = SubResource("PlaneMesh_syt4s")
+
+[node name="cave4" parent="Terrain" instance=ExtResource("13_4os30")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5886, -2.58282, 23.3816)
 
 [node name="Hitboxes" type="Node3D" parent="."]
 
@@ -340,9 +357,10 @@ shape = SubResource("BoxShape3D_22dkm")
 
 [node name="StaticBody3D7" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43783, -3.06988, 12.9334)
+metadata/water = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.780396, -0.998762, -5.03875)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897661, -0.998762, -4.98341)
 shape = SubResource("BoxShape3D_t43yl")
 
 [node name="StaticBody3D6" type="StaticBody3D" parent="Hitboxes"]
@@ -352,7 +370,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43783, -3.06988, 14.8445)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.84963, 0, 0.0461121)
 shape = SubResource("BoxShape3D_a7cqn")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Hitboxes/StaticBody3D6"]
+[node name="StaticBody3D11" type="StaticBody3D" parent="Hitboxes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43783, -3.06988, 14.8445)
+metadata/water = true
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Hitboxes/StaticBody3D11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15404, -0.998922, 6.29902)
 shape = SubResource("BoxShape3D_2hfd7")
 
@@ -388,3 +410,11 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.092
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D10"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.27787, 0.438843, -4.56242)
 shape = SubResource("BoxShape3D_qfatp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.8629, -2.07622, 23.2501)
+material_override = ExtResource("10_xnugt")
+cast_shadow = 0
+ignore_occlusion_culling = true
+gi_mode = 0
+mesh = SubResource("QuadMesh_fow54")

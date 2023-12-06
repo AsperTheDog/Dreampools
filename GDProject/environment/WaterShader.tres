@@ -27,7 +27,7 @@ input_name = "time"
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_m5clb"]
 parameter_name = "ColorParameter"
 default_value_enabled = true
-default_value = Color(0, 0.266667, 0.533333, 1)
+default_value = Color(0.298039, 1, 1, 1)
 
 [sub_resource type="VisualShaderNodeFloatFunc" id="VisualShaderNodeFloatFunc_7qylm"]
 function = 12
@@ -96,6 +96,8 @@ operator = 3
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_0rono"]
 parameter_name = "EmissionColor"
+default_value_enabled = true
+default_value = Color(0.356863, 1, 1, 1)
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_fgj34"]
 operator = 2
@@ -176,13 +178,13 @@ render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_s
 
 global uniform float WaterSpeed = 1;
 uniform sampler2D tex_vtx_2;
-uniform vec4 ColorParameter : source_color = vec4(0.000000, 0.266667, 0.533333, 1.000000);
+uniform vec4 ColorParameter : source_color = vec4(0.298039, 1.000000, 1.000000, 1.000000);
 uniform vec2 Size = vec2(1.000000, 1.000000);
 uniform float Scale = 1;
 uniform sampler2D tex_frg_3;
 uniform sampler2D tex_frg_7;
 uniform sampler2D depth_tex_frg_14 : hint_depth_texture;
-uniform vec4 EmissionColor : source_color;
+uniform vec4 EmissionColor : source_color = vec4(0.356863, 1.000000, 1.000000, 1.000000);
 
 
 
@@ -383,7 +385,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-1295.53, -367.468)
+graph_offset = Vector2(-1288.37, -226.959)
 nodes/vertex/2/node = SubResource("VisualShaderNodeTexture_6lio0")
 nodes/vertex/2/position = Vector2(-500, -340)
 nodes/vertex/3/node = SubResource("VisualShaderNodeInput_lnmuq")

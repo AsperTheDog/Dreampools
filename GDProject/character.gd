@@ -10,6 +10,7 @@ var current_speed := 5.0
 const walking_speed := 5.0
 const sprinting_speed := 7.0
 const crouching_speed := 3.0
+const water_multiplier := 0.6
 
 const jump_prep_crouch := -0.2
 const jump_velocity := 8
@@ -19,9 +20,12 @@ const mouse_sens := 0.07
 
 const default_lerp_speed := 7.0
 const air_damping := 3.0
+const water_damping := 4.0
 var lerp_speed := default_lerp_speed
 
 var direction := Vector3.ZERO
+
+var in_water: bool = false
 
 @onready var head_height: float = $head.position.y
 const crouching_depth := -0.8
@@ -42,6 +46,14 @@ func _input(event):
 
 
 func _physics_process(delta):
+	var lastCollCount := get_slide_collision_count()
+	in_water = false
+	for i in lastCollCount:
+		var lastColl = get_slide_collision(i)
+		if lastColl.get_collider().has_meta("water"):
+			in_water = true
+			break
+	
 	applyBob(delta)
 	if Input.is_action_pressed("crouch"):
 		current_speed = crouching_speed
@@ -63,7 +75,10 @@ func _physics_process(delta):
 			current_speed = sprinting_speed
 		else:
 			current_speed = walking_speed
-		
+	
+	if in_water:
+		current_speed = current_speed * water_multiplier
+	
 	if not prepping_jump:
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			prepping_jump = true
@@ -73,11 +88,15 @@ func _physics_process(delta):
 		elif Input.is_action_just_released("jump"):
 			velocity.y = jump_velocity
 	
-	if not is_on_floor():
-		velocity.y -= gravity * delta
+	if in_water:
+		lerp_speed = default_lerp_speed / water_damping
+	elif not is_on_floor():
 		lerp_speed = default_lerp_speed / air_damping
 	else:
 		lerp_speed = default_lerp_speed
+
+	if not is_on_floor():
+		velocity.y -= gravity * delta
 	
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	direction = lerp(direction, (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(), delta * lerp_speed)
