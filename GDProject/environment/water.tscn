@@ -61,8 +61,8 @@ shader_parameter/EmissionColor = Color(0.356863, 1, 1, 1)
 [sub_resource type="PlaneMesh" id="PlaneMesh_n0ucb"]
 lightmap_size_hint = Vector2i(81, 53)
 size = Vector2(15, 12)
-subdivide_width = 100
-subdivide_depth = 100
+subdivide_width = 30
+subdivide_depth = 30
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7xc26"]
 render_priority = 0

@@ -68,6 +68,10 @@ jump={
 
 3d/default_gravity=20.0
 
+[rendering]
+
+occlusion_culling/use_occlusion_culling=true
+
 [shader_globals]
 
 WaterSpeed={
