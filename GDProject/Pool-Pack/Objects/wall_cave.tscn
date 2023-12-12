@@ -6,4 +6,5 @@
 [node name="wall-cave2" instance=ExtResource("1_vwqqq")]
 
 [node name="wall-cave" parent="." index="0"]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, -0.011199, 0, 0)
 material_override = ExtResource("2_hs8gt")
