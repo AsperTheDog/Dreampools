@@ -52,9 +52,9 @@ adjustment_saturation = 1.3
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bsmsj"]
 render_priority = 0
 shader = ExtResource("7_lg2mh")
-shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
 shader_parameter/Size = Vector2(15, 12)
 shader_parameter/Scale = 5.0
+shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
 shader_parameter/EmissionColor = Color(0.356863, 1, 1, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_n0ucb"]
@@ -74,9 +74,9 @@ size = Vector2(20.59, 9.32)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ymjel"]
 render_priority = 0
 shader = ExtResource("7_lg2mh")
-shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
 shader_parameter/Size = Vector2(16, 18)
 shader_parameter/Scale = 5.0
+shader_parameter/ColorParameter = Color(0.298039, 1, 1, 1)
 shader_parameter/EmissionColor = Color(0.356863, 1, 1, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_syt4s"]
