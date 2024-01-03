@@ -40,7 +40,7 @@ fog_sky_affect = 0.0
 fog_height = -1.0
 fog_height_density = 0.07
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.001
+volumetric_fog_density = 0.002
 volumetric_fog_albedo = Color(0, 0, 0, 1)
 adjustment_enabled = true
 adjustment_contrast = 1.2
@@ -63,7 +63,7 @@ subdivide_depth = 30
 [node name="Node3D" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.528442, -3)
 current = true
 
 [node name="terrain" type="Node3D" parent="."]
@@ -421,11 +421,11 @@ environment = SubResource("Environment_tehaj")
 [node name="SpotLight3D" type="SpotLight3D" parent="WorldEnvironment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11.9459)
 light_color = Color(1, 0.968627, 0.941176, 1)
-light_energy = 16.0
+light_energy = 10.0
 spot_range = 72.0463
 spot_angle = 17.7445
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.552843, -2.79694, -51.0218)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69415, -3.06068, -51.1403)
 material_override = SubResource("ShaderMaterial_p383r")
 mesh = SubResource("PlaneMesh_oxwvs")
