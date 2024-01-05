@@ -7,3 +7,11 @@
 
 [node name="wall-cave" parent="." index="0"]
 material_override = ExtResource("2_hs8gt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.2143e-09, 0, -0.210799)
+depth = 0.43
+polygon = PackedVector2Array(-3.18846, 0.0289345, -3.04358, 1.22171, -2.6293, 1.98862, -1.98141, 2.58832, -1.05439, 2.97121, -0.223121, 3.03926, 0.531052, 2.98918, 1.2765, 2.76576, 1.87224, 2.36797, 2.37957, 1.78933, 2.68777, 1.02189, 2.7882, 0.0366461, 6.19937, 0.0131426, 6.17854, 5.98428, -5.79189, 6.00266, -5.81138, 0.000355005)

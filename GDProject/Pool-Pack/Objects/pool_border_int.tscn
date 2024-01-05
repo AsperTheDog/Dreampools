@@ -7,3 +7,10 @@
 
 [node name="pool-border-int" parent="." index="0"]
 material_override = ExtResource("2_7cqnu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, -5.96046e-08, 1, 0, -1, -5.96046e-08, 0, 0, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.05341e-08, 0.512278)
+polygon = PackedVector2Array(-3.00749, -0.991631, -2.33895, -1.12646, -1.82771, -1.39613, -1.3895, -1.81748, -1.11984, -2.35681, -1.00186, -2.96356, -3.00188, -2.99165)

@@ -1,5 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://e0e14tpuqxv8"]
+[gd_scene load_steps=3 format=3 uid="uid://e0e14tpuqxv8"]
 
 [ext_resource type="PackedScene" uid="uid://b7j2cnv2dj2cu" path="res://Pool-Pack/Models/stairs.glb" id="1_f4t1f"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_fxks3"]
+size = Vector3(1.98841, 0.321777, 7.04119)
+
 [node name="stairs2" instance=ExtResource("1_f4t1f")]
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03618, -0.368505, -6.73933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D7" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.895277, 0.44551, 0, -0.44551, 0.895277, -1.02955, 1.65754, 9.4249)
+shape = SubResource("BoxShape3D_fxks3")

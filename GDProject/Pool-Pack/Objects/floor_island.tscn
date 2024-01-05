@@ -7,3 +7,9 @@
 
 [node name="floor-island" parent="." index="0"]
 material_override = ExtResource("2_63wqp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.489092, 0)
+polygon = PackedVector2Array(-0.494071, -2.55879, -0.486978, 2.63921, -0.323317, 2.90015, 0.000533991, 3.00985, 0.321773, 2.91321, 0.495358, 2.6174, 0.502592, -2.56945, 0.353459, -2.8921, 0.00169194, -3.02002, -0.332309, -2.89921)

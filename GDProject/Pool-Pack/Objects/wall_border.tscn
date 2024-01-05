@@ -7,3 +7,11 @@
 
 [node name="wall-border" parent="." index="0"]
 material_override = ExtResource("2_7lqgh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.740086, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(-0.866026, -0.5, -3.78552e-08, -4.37114e-08, 1.91069e-15, 1, -0.5, 0.866025, -2.18557e-08, 4, 2.23483, 3)
+depth = 5.77
+polygon = PackedVector2Array(4.23903, 0.782919, 6.46173, -3.22272, 4.22423, 0.637008, 3.58521, 1.24093, 2.57916, 1.35308, 1.56078, 0.869649, -1.70839, -0.999973, 1.55402, 0.977681, 2.51809, 1.4376, 3.10081, 1.43959, 3.64853, 1.29113)
