@@ -1,0 +1,284 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsdjdigox6lal"]
+
+[ext_resource type="Script" path="res://scripts/Options.gd" id="1_rluhi"]
+
+[node name="Options" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rluhi")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.1
+anchor_right = 0.804
+anchor_bottom = 0.9
+offset_left = 0.207993
+offset_top = 0.199997
+offset_right = -0.208008
+offset_bottom = -0.200012
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Graphics" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "Graphics"
+fit_content = true
+
+[node name="WindowMode" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/WindowMode"]
+layout_mode = 2
+text = "Window mode"
+fit_content = true
+autowrap_mode = 0
+
+[node name="OptionButton" type="OptionButton" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/WindowMode"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+item_count = 3
+selected = 1
+popup/item_0/text = "Windowed"
+popup/item_0/id = 2
+popup/item_1/text = "Borderless"
+popup/item_1/id = 3
+popup/item_2/text = "Fullscreen"
+popup/item_2/id = 4
+
+[node name="VSync" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VSync"]
+layout_mode = 2
+text = "Vertical Sync"
+fit_content = true
+autowrap_mode = 0
+
+[node name="OptionButton" type="OptionButton" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VSync"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+item_count = 2
+selected = 0
+popup/item_0/text = "On"
+popup/item_0/id = 1
+popup/item_1/text = "Off"
+popup/item_1/id = 0
+
+[node name="MSAA" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MSAA"]
+layout_mode = 2
+text = "Anti Aliasing"
+fit_content = true
+autowrap_mode = 0
+
+[node name="OptionButton" type="OptionButton" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MSAA"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+item_count = 4
+selected = 0
+popup/item_0/text = "Off"
+popup/item_0/id = 0
+popup/item_1/text = "MSAA x2"
+popup/item_1/id = 1
+popup/item_2/text = "MSAA x4"
+popup/item_2/id = 2
+popup/item_3/text = "MSAA x8"
+popup/item_3/id = 3
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Gameplay" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "Gameplay"
+fit_content = true
+
+[node name="Subtitles" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Subtitles"]
+layout_mode = 2
+text = "Subtitles"
+fit_content = true
+autowrap_mode = 0
+
+[node name="OptionButton" type="OptionButton" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Subtitles"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+item_count = 2
+selected = 0
+popup/item_0/text = "On"
+popup/item_0/id = 0
+popup/item_1/text = "Off"
+popup/item_1/id = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Controls" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "Controls"
+fit_content = true
+
+[node name="Mouse" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Mouse"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mouse Sensitivity (0.7)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Mouse"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.01
+max_value = 0.2
+step = 0.001
+value = 0.07
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Audio" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "Audio"
+fit_content = true
+
+[node name="MasterVolume" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MasterVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Master Volume (100%)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MasterVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="VoiceVolume" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VoiceVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Voice Volume (100%)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VoiceVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="EffectsVolume" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EffectsVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Effects Volume (100%)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EffectsVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="MusicVolume" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MusicVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Music Volume (100%)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MusicVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="item_selected" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/WindowMode/OptionButton" to="." method="_on_window_mode"]
+[connection signal="item_selected" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VSync/OptionButton" to="." method="_on_VSync"]
+[connection signal="item_selected" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MSAA/OptionButton" to="." method="_on_antialiasing"]
+[connection signal="item_selected" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Subtitles/OptionButton" to="." method="_on_subtitles"]
+[connection signal="value_changed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Mouse/HSlider" to="." method="_on_mouse_sensitivity"]
+[connection signal="value_changed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MasterVolume/HSlider" to="." method="_on_master_volume"]
+[connection signal="value_changed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VoiceVolume/HSlider" to="." method="_on_voice_volume"]
+[connection signal="value_changed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EffectsVolume/HSlider" to="." method="_on_effects_volume"]
+[connection signal="value_changed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MusicVolume/HSlider" to="." method="_on_music_volume"]

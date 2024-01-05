@@ -1,0 +1,115 @@
+[gd_scene load_steps=5 format=3 uid="uid://cixy8i2fvu6g8"]
+
+[ext_resource type="Script" path="res://scripts/character.gd" id="1_d67lr"]
+[ext_resource type="Script" path="res://scripts/Pause.gd" id="2_s8m6x"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_uba7g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5gl3g"]
+radius = 0.496384
+height = 1.34716
+
+[node name="Character" type="CharacterBody3D"]
+process_mode = 3
+script = ExtResource("1_d67lr")
+
+[node name="standingShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00111389, 0.899158, 0.000854492)
+shape = SubResource("CapsuleShape3D_uba7g")
+
+[node name="crouchingShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.579072, 0)
+shape = SubResource("CapsuleShape3D_5gl3g")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head"]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 2, 0)
+
+[node name="Pause" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_s8m6x")
+
+[node name="ColorRect" type="ColorRect" parent="Pause"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.188235)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pause"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.097
+anchor_right = 0.601
+anchor_bottom = 0.267
+offset_left = 0.199982
+offset_top = 0.143997
+offset_right = -0.35199
+offset_bottom = -0.0160065
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 80
+text = "Pause"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Panel" type="Panel" parent="Pause"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.408
+anchor_top = 0.548
+anchor_right = 0.592
+anchor_bottom = 0.812
+offset_left = -0.0160217
+offset_top = -0.104034
+offset_right = 0.0159912
+offset_bottom = -0.176025
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.5
+offset_top = -50.5
+offset_right = 80.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Continue" type="Button" parent="Pause/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(161.355, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Continue"
+
+[node name="Options" type="Button" parent="Pause/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Options"
+
+[node name="Exit" type="Button" parent="Pause/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Quit"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="Pause/Panel/VBoxContainer/Continue" to="Pause" method="_on_continue_pressed"]
+[connection signal="pressed" from="Pause/Panel/VBoxContainer/Options" to="Pause" method="_on_options_pressed"]
+[connection signal="pressed" from="Pause/Panel/VBoxContainer/Exit" to="Pause" method="_on_exit_pressed"]

@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnbh78wm2u7q5"]
+
+[ext_resource type="Script" path="res://scripts/Transition.gd" id="1_2dufy"]
+
+[sub_resource type="Curve" id="Curve_tye0s"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.09, 0), 0.0, 0.0, 0, 0, Vector2(0.192412, 0.136364), 0.0, 0.0, 0, 0, Vector2(0.271003, 0.1), 0.0, 0.0, 0, 0, Vector2(0.403794, 0.1), 0.0, 0.0, 0, 0, Vector2(0.46477, 0.0727272), 0.0, 0.0, 0, 0, Vector2(0.705962, 0.672727), 2.51269, 2.51269, 0, 0, Vector2(0.996956, 1), 0.0, 0.0, 0, 0]
+point_count = 8
+
+[sub_resource type="Curve" id="Curve_rupqb"]
+_data = [Vector2(0.137868, 0), 0.0, 2.77574, 0, 1, Vector2(0.318, 0.5), 2.77574, -5.26582, 1, 0, Vector2(0.435, 0.5), 4.13165, -3.88445, 0, 0, Vector2(0.495, 0.5), 5.7384, 0.0, 0, 0, Vector2(0.745, 0.5), 0.0, 0.0, 0, 0, Vector2(1, 1), 2.9036, 0.0, 0, 0]
+point_count = 6
+
+[node name="transition" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_2dufy")
+folksCurve = SubResource("Curve_tye0s")
+deathTitleCurve = SubResource("Curve_rupqb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 127
+
+[node name="fade" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

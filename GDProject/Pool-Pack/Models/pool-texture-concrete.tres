@@ -1,0 +1,24 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://ck85866uy8m40"]
+
+[ext_resource type="Texture2D" uid="uid://5y6cwrs2cr6o" path="res://Pool-Pack/Models/pool-texture-concrete_orm.png" id="1_evn05"]
+[ext_resource type="Texture2D" uid="uid://rsxblqmpgxx6" path="res://Pool-Pack/Models/pool-texture-concrete_heightmap.png" id="2_s32qg"]
+[ext_resource type="Texture2D" uid="uid://p1umpo67j23e" path="res://Pool-Pack/Models/pool-texture-concrete_normal.png" id="3_u47te"]
+
+[resource]
+vertex_color_use_as_albedo = true
+roughness_texture = ExtResource("1_evn05")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.5
+normal_texture = ExtResource("3_u47te")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("1_evn05")
+heightmap_enabled = true
+heightmap_scale = 0.1
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("2_s32qg")
+subsurf_scatter_strength = 0.1
+uv1_scale = Vector3(7.675, 7.675, 7.675)
