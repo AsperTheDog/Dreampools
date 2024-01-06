@@ -506,6 +506,7 @@ alignment = 0
 stream = ExtResource("8_sao6t")
 volume_db = -80.0
 autoplay = true
+bus = &"Effects"
 
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/Button" to="." method="_on_start"]
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/Button2" to="." method="_on_options"]

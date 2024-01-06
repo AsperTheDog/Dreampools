@@ -3013,6 +3013,7 @@ attenuation_model = 1
 unit_size = 40.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 2" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.50856, 8.7581, 101.721)
@@ -3021,6 +3022,7 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 6" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1014, 8.7581, 99.7543)
@@ -3029,6 +3031,7 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 7" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1014, 8.7581, 111.513)
@@ -3037,6 +3040,7 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 8" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1014, 8.7581, 126.085)
@@ -3045,6 +3049,7 @@ attenuation_model = 1
 unit_size = 6.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 9" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.2414, 8.7581, 148.189)
@@ -3052,6 +3057,7 @@ stream = ExtResource("27_5sw06")
 attenuation_model = 1
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 3" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.50856, 8.7581, 126.411)
@@ -3060,6 +3066,7 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 4" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.36226, 8.7581, 126.411)
@@ -3068,6 +3075,7 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
 
 [node name="ambient 5" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7585, 8.7581, 101.859)
@@ -3076,3 +3084,4 @@ attenuation_model = 1
 unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
+bus = &"Effects"
