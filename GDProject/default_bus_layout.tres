@@ -1,4 +1,20 @@
-[gd_resource type="AudioBusLayout" format=3 uid="uid://docexqxsjhbbf"]
+[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://docexqxsjhbbf"]
+
+[sub_resource type="AudioEffectEQ" id="AudioEffectEQ_w14ne"]
+resource_name = "EQ"
+band_db/32_hz = -46.6
+band_db/100_hz = -21.8
+band_db/1000_hz = -3.0
+band_db/3200_hz = -0.9
+band_db/10000_hz = -17.8
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_mh7rg"]
+resource_name = "Reverb"
+wet = 0.4
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_35uex"]
+resource_name = "Reverb"
+dry = 0.8
 
 [resource]
 bus/1/name = &"Voice"
@@ -19,3 +35,15 @@ bus/3/mute = false
 bus/3/bypass_fx = false
 bus/3/volume_db = 0.0
 bus/3/send = &"Master"
+bus/3/effect/0/effect = SubResource("AudioEffectEQ_w14ne")
+bus/3/effect/0/enabled = true
+bus/3/effect/1/effect = SubResource("AudioEffectReverb_mh7rg")
+bus/3/effect/1/enabled = true
+bus/4/name = &"Steps"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 0.0
+bus/4/send = &"Effects"
+bus/4/effect/0/effect = SubResource("AudioEffectReverb_35uex")
+bus/4/effect/0/enabled = true

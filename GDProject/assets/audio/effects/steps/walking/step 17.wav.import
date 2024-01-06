@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://croiq0s76jn50"
+path="res://.godot/imported/step 17.wav-986b001e5da657c62cf31cf1524ebab2.sample"
+
+[deps]
+
+source_file="res://assets/audio/effects/steps/walking/step 17.wav"
+dest_files=["res://.godot/imported/step 17.wav-986b001e5da657c62cf31cf1524ebab2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://6sulqfhwngo1"]
+[gd_scene load_steps=15 format=3 uid="uid://6sulqfhwngo1"]
 
 [ext_resource type="Script" path="res://scripts/mainMenu.gd" id="1_h1rr2"]
 [ext_resource type="PackedScene" uid="uid://dypmthvkpx2xs" path="res://Pool-Pack/Objects/floor.tscn" id="2_ctoxo"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bg3f525w7gkea" path="res://Pool-Pack/Objects/cave.tscn" id="5_wfbne"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="6_cyoxi"]
 [ext_resource type="Shader" uid="uid://bg4e6jb3sk0f7" path="res://environment/WaterShader.tres" id="7_sxft3"]
+[ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="8_sao6t"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_rs6ei"]
 
@@ -500,6 +501,11 @@ size_flags_vertical = 0
 text = "Exit
 "
 alignment = 0
+
+[node name="ambient" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_sao6t")
+volume_db = -80.0
+autoplay = true
 
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/Button" to="." method="_on_start"]
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/Button2" to="." method="_on_options"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxyeko60ff1bo"]
+
+[ext_resource type="AudioStream" uid="uid://dw7x7xvt1rf3j" path="res://assets/audio/music/Game_Score_-_demo_2.mp3" id="1_esjvr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1hqqi"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_1hqqi")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.452535, 0)
+stream = ExtResource("1_esjvr")
+attenuation_model = 2
+unit_size = 25.0
+autoplay = true
+stream_paused = true
+bus = &"Music"

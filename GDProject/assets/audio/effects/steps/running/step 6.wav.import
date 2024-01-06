@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bq82jt0dlkpd6"
+path="res://.godot/imported/step 6.wav-811ea6d443634e45d8459168bd819c00.sample"
+
+[deps]
+
+source_file="res://assets/audio/effects/steps/running/step 6.wav"
+dest_files=["res://.godot/imported/step 6.wav-811ea6d443634e45d8459168bd819c00.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

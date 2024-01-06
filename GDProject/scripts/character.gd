@@ -5,6 +5,8 @@ class_name Character extends CharacterBody3D
 @onready var crouchingShape: CollisionShape3D = $crouchingShape
 @onready var standRay = $RayCast3D
 
+const HALF_PI := PI / 2
+
 var current_speed := 5.0
 
 const walking_speed := 5.0
@@ -25,7 +27,12 @@ var lerp_speed := default_lerp_speed
 
 var direction := Vector3.ZERO
 
-var in_water: bool = false
+var in_water: bool = false:
+	set(value):
+		if value == in_water: return
+		in_water = value
+		if not in_water and is_on_floor(): return
+		$splash.step(StepPlayer.StepType.SPLASH)
 
 var trackInput: bool = true:
 	set(value):
@@ -69,13 +76,14 @@ func _physics_process(delta):
 	if not visible: return
 	
 	var lastCollCount := get_slide_collision_count()
-	in_water = false
+	var tmp_water = false
 	for i in lastCollCount:
 		var lastColl = get_slide_collision(i)
 		if lastColl.get_collider() == null: continue
 		if lastColl.get_collider().has_meta("water"):
-			in_water = true
+			tmp_water = true
 			break
+	in_water = tmp_water
 	
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -136,17 +144,27 @@ func _physics_process(delta):
 
 var time: float = 0
 var intensity: float = 1
+var nextInterval: float = HALF_PI + PI
 func applyBob(delta):
+	const midSpeed := (sprinting_speed + walking_speed) / 2
 	if is_on_floor():
 		intensity = lerp(intensity, inverse_lerp(0, sprinting_speed, velocity.length()), 0.3)
 	else:
 		intensity = lerp(intensity, inverse_lerp(0, sprinting_speed, 0.0), 0.3)
 	time += delta * velocity.length() * 1.5
+	var ySin := sin(time * 2)
 	var xOffset := sin(time) * 0.15 * intensity
-	var yOffset := sin(time * 2) * 0.05 * intensity
+	var yOffset := ySin * 0.05 * intensity
 	$head/Camera3D.position.x = xOffset
 	$head/Camera3D.position.y = yOffset
-
+	if time * 2 >= nextInterval and is_on_floor():
+		if in_water:
+			$steps.volume_db = max(-15, linear_to_db(inverse_lerp(0.1, 0.6, clamp(intensity, 0.1, 0.6))) * 2) - 15
+			$steps.step(StepPlayer.StepType.WATER)
+		else:
+			$steps.volume_db = linear_to_db(inverse_lerp(0.2, 1, clamp(intensity, 0.2, 1))) * 3
+			$steps.step(StepPlayer.StepType.WALKING if intensity <= midSpeed else StepPlayer.StepType.RUNNING)
+		nextInterval += PI * 2
 
 func setLookingPos(dir: Vector2):
 	rotation.y = dir.y

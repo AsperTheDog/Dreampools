@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1sphpvbxm3br"
+path="res://.godot/imported/step 14.wav-150db9c3520e8d293748c25fb29057d7.sample"
+
+[deps]
+
+source_file="res://assets/audio/effects/steps/water/step 14.wav"
+dest_files=["res://.godot/imported/step 14.wav-150db9c3520e8d293748c25fb29057d7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
