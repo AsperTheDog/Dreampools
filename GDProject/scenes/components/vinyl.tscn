@@ -13,5 +13,4 @@ stream = ExtResource("1_esjvr")
 attenuation_model = 2
 unit_size = 25.0
 autoplay = true
-stream_paused = true
 bus = &"Music"
