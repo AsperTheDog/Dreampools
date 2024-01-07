@@ -63,7 +63,7 @@ func _process(delta: float):
 
 var charaRotation: Vector2 = Vector2.ZERO
 func _input(event):
-	if not trackInput or not visible: return
+	if not trackInput or standingUp or not visible: return
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
@@ -89,7 +89,7 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 	
 	applyBob(delta)
-	if Input.is_action_pressed("crouch") and trackInput:
+	if Input.is_action_pressed("crouch") and trackInput and not standingUp:
 		current_speed = crouching_speed
 		if not prepping_jump:
 			head.position.y = lerp(head.position.y, head_height + crouching_depth, delta * default_lerp_speed)
@@ -105,7 +105,7 @@ func _physics_process(delta):
 		standingShape.disabled = false
 		crouchingShape.disabled = true
 	
-		if Input.is_action_pressed("sprint") and trackInput:
+		if Input.is_action_pressed("sprint") and trackInput and not standingUp:
 			current_speed = sprinting_speed
 		else:
 			current_speed = walking_speed
@@ -114,12 +114,12 @@ func _physics_process(delta):
 		current_speed = current_speed * water_multiplier
 	
 	if not prepping_jump:
-		if Input.is_action_just_pressed("jump") and is_on_floor() and trackInput:
+		if Input.is_action_just_pressed("jump") and is_on_floor() and trackInput and not standingUp:
 			prepping_jump = true
 	else:
 		if not is_on_floor():
 			prepping_jump = false
-		elif Input.is_action_just_released("jump") and trackInput:
+		elif Input.is_action_just_released("jump") and trackInput and not standingUp:
 			velocity.y = jump_velocity
 	
 	if in_water:
@@ -129,7 +129,7 @@ func _physics_process(delta):
 	else:
 		lerp_speed = default_lerp_speed
 	
-	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back") if trackInput else Vector2.ZERO
+	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back") if trackInput and not standingUp else Vector2.ZERO
 	direction = lerp(direction, (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(), delta * lerp_speed)
 
 	if direction:
@@ -169,6 +169,14 @@ func applyBob(delta):
 func setLookingPos(dir: Vector2):
 	rotation.y = dir.y
 	head.rotation.x = dir.x
+
+
+var standingUp: bool = false
+func standUp():
+	standingUp = true
+	$AnimationPlayer.play("standUp")
+	await get_tree().create_timer($AnimationPlayer.get_animation("standUp").length).timeout
+	standingUp = false
 
 
 func _on_visibility_changed():

@@ -1,6 +1,7 @@
 extends Control
 
 signal changedVisibility(isVisible: bool)
+signal changedSubtitles(active: bool)
 
 var subtitles: bool = true
 
@@ -26,6 +27,7 @@ func _on_antialiasing(index: int):
 
 func _on_subtitles(index: int):
 	subtitles = index == 0
+	changedSubtitles.emit(subtitles)
 
 
 @onready var mouseText: RichTextLabel = $Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Mouse/RichTextLabel

@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.2", "Forward Plus")
 Transition="*res://scenes/components/Transition.tscn"
 MainCharacter="*res://scenes/components/character.tscn"
 Options="*res://scenes/components/Options.tscn"
+Subtitles="*res://scenes/components/Subtitles.tscn"
 
 [debug]
 
