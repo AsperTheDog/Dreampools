@@ -42,7 +42,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 2 - line 1.wav"
 	},
 	"loop2-father2": {
 		"text": [
@@ -67,7 +67,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 2 - line 2.wav"
 	},
 	"loop2-father3": {
 		"text": [
@@ -87,7 +87,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 2 - line 3.wav"
 	},
 	"loop2-father4": {
 		"text": [
@@ -102,7 +102,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 2 - line 4.wav"
 	},
 	"loop3-father1": {
 		"text": [
@@ -122,7 +122,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 1.wav"
 	},
 	"loop3-father2": {
 		"text": [
@@ -137,7 +137,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 2.wav"
 	},
 	"loop3-father3": {
 		"text": [
@@ -152,7 +152,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 3.wav"
 	},
 	"loop3-father4": {
 		"text": [
@@ -167,7 +167,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 4.wav"
 	},
 	"loop3-father5": {
 		"text": [
@@ -187,7 +187,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 5.wav"
 	},
 	"loop3-father6": {
 		"text": [
@@ -207,7 +207,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 6.wav"
 	},
 	"loop3-father7": {
 		"text": [
@@ -227,7 +227,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 3 - line 7.wav"
 	},
 	"loop3-narrator1": {
 		"text": [
@@ -295,7 +295,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 4 - line 1.wav"
 	},
 	"loop4-father2": {
 		"text": [
@@ -310,7 +310,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 4 - line 2.wav"
 	},
 	"loop4-father3": {
 		"text": [
@@ -330,7 +330,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 4 - line 3.wav"
 	},
 	"loop4-father4": {
 		"text": [
@@ -355,7 +355,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 4 - line 4.wav"
 	},
 	"loop5-father1": {
 		"text": [
@@ -375,7 +375,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 5 - line 1.wav"
 	},
 	"loop5-father2": {
 		"text": [
@@ -385,7 +385,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 5 - line 2.wav"
 	},
 	"loop6-father1": {
 		"text": [
@@ -405,7 +405,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 1.wav"
 	},
 	"loop6-father2": {
 		"text": [
@@ -425,7 +425,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 2.wav"
 	},
 	"loop6-father3": {
 		"text": [
@@ -435,7 +435,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 3.wav"
 	},
 	"loop6-father4": {
 		"text": [
@@ -450,7 +450,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 4.wav"
 	},
 	"loop6-father5": {
 		"text": [
@@ -465,7 +465,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 5.wav"
 	},
 	"loop6-father6": {
 		"text": [
@@ -485,7 +485,7 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 6.wav"
 	},
 	"loop6-father7": {
 		"text": [
@@ -500,6 +500,6 @@
 				"character": "father"
 			}
 		],
-		"audio": ""
+		"audio": "res://assets/audio/voiceover/Loop 6 - line 7.wav"
 	}
 }

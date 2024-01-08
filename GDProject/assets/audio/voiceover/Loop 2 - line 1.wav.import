@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dx6ofvy73mhy5"
+path="res://.godot/imported/Loop 2 - line 1.wav-fcb2253add9d749e89f7ceea38c4cf9f.sample"
+
+[deps]
+
+source_file="res://assets/audio/voiceover/Loop 2 - line 1.wav"
+dest_files=["res://.godot/imported/Loop 2 - line 1.wav-fcb2253add9d749e89f7ceea38c4cf9f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
