@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dtrg4n80ubgua" path="res://assets/models/phonograph.glb" id="4_fqh2t"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2fywh"]
-size = Vector3(0.860474, 1, 0.711212)
+size = Vector3(0.726135, 1, 0.711212)
 
 [node name="MeshInstance3D" type="Node3D"]
 
@@ -25,7 +25,7 @@ script = ExtResource("2_46kxd")
 audioPlayer = NodePath("../AudioStreamPlayer3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0697632, 0, -0.0259552)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00259392, 0, -0.0259552)
 shape = SubResource("BoxShape3D_2fywh")
 
 [node name="vinyl" type="AudioStreamPlayer3D" parent="Area3D"]

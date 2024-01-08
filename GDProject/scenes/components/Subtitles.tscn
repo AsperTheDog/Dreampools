@@ -28,3 +28,6 @@ mouse_filter = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="subtitleContainer"]
 layout_mode = 2
+
+[node name="voices" type="AudioStreamPlayer" parent="."]
+bus = &"Voice"

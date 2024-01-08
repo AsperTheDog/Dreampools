@@ -28,10 +28,23 @@ func startSubtitle(subtitle: String):
 	$subtitleContainer.add_child(label)
 	$subtitleContainer.move_child(label, 0)
 	currentSubs[subtitle] = {"label": label, "tween": null}
+	var audioLength := -1.0
+	if "audio" in subtitles[subtitle] and subtitles[subtitle]["audio"] != "":
+		$voices.stream = load(subtitles[subtitle]['audio'])
+		$voices.play()
+		audioLength = $voices.stream.get_length()
 	var tween = create_tween()
-	for stage in subtitles[subtitle].size():
+	var spent = 0
+	for stage in subtitles[subtitle]['text'].size():
 		tween.tween_callback(_assignSubtitle.bind(subtitle, stage))
-		tween.tween_interval(subtitles[subtitle][stage]["duration"])
+		if audioLength != -1 \
+		and stage == subtitles[subtitle]['text'].size() - 1 \
+		and subtitles[subtitle]['text'][stage]["duration"] <= 0\
+		and audioLength - spent > 0:
+			tween.tween_interval(audioLength - spent)
+		else:
+			tween.tween_interval(subtitles[subtitle]['text'][stage]["duration"])
+			spent += subtitles[subtitle]['text'][stage]["duration"]
 	tween.tween_callback(removeSubtitle.bind(subtitle))
 	currentSubs[subtitle]["tween"] = tween
 
@@ -45,6 +58,6 @@ func removeSubtitle(subtitle: String):
 
 
 func _assignSubtitle(subtitle: String, stage: int):
-	currentSubs[subtitle]["label"].text = "[center]"+subtitles[subtitle][stage]["text"]+"[/center]"
-	var charaData: Color = characterColors[subtitles[subtitle][stage]["character"]]
+	currentSubs[subtitle]["label"].text = "[center]"+subtitles[subtitle]['text'][stage]["text"]+"[/center]"
+	var charaData: Color = characterColors[subtitles[subtitle]['text'][stage]["character"]]
 	currentSubs[subtitle]["label"].set("theme_override_colors/font_outline_color", charaData)

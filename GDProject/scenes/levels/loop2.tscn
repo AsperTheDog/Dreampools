@@ -305,7 +305,7 @@ size = Vector3(19.7086, 5.56848, 2.76446)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.578835, 5.97089, 165.535)
 script = ExtResource("1_4rs0r")
 nextLoop = ExtResource("2_0hwga")
-nextArea = NodePath("Interactions/loop2End")
+nextArea = NodePath("Interactions/Area3D")
 
 [node name="StartingPos" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08428, 3.98805, -13.7358)
@@ -3027,12 +3027,12 @@ shape = SubResource("BoxShape3D_dwcao")
 
 [node name="Interactions" type="Node3D" parent="."]
 
-[node name="loop2End" type="Area3D" parent="Interactions"]
+[node name="Area3D" type="Area3D" parent="Interactions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3769, 10.2613, 164.565)
 collision_layer = 4
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/loop2End"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.554138, -2.28375, -0.067749)
 shape = SubResource("BoxShape3D_1el2e")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://ybqotrot4m81"]
+[gd_scene load_steps=105 format=3 uid="uid://ybqotrot4m81"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_p4m60"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="3_kyg1n"]
@@ -279,7 +279,13 @@ size = Vector3(34.0274, 1.01123, 16.6255)
 size = Vector3(11.2847, 1.01123, 39.1937)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8huwg"]
-size = Vector3(1.02344, 4.70142, 1.03271)
+size = Vector3(1.02344, 57.2545, 1.03271)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c1ji8"]
+size = Vector3(1.25313, 2.0647, 1.1313)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsccg"]
+size = Vector3(10.392, 1.65558, 1.1313)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ie04l"]
 size = Vector3(8.18079, 1.05713, 6.0015)
@@ -793,7 +799,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5854, 7.96536, 62.9203)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5854, 7.96536, 68.9203)
 
 [node name="column-cilinder2" parent="EntranceRoom/Room" instance=ExtResource("14_2x8av")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.94339, 62.4541)
+transform = Transform3D(0.947489, 0.129133, 0.292555, -0.135041, 0.99084, -2.5576e-08, -0.289875, -0.039507, 0.956249, 15, 7.79989, 62.4541)
 
 [node name="column-cilinder3" parent="EntranceRoom/Room/column-cilinder2" instance=ExtResource("14_2x8av")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
@@ -805,13 +811,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.94339, 52.4541)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 
 [node name="column-cilinder4" parent="EntranceRoom/Room" instance=ExtResource("14_2x8av")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.94339, 42.4541)
+transform = Transform3D(0.90585, 0.423599, 0, -0.423599, 0.90585, 0, 0, 0, 1, 12.6505, 6.88986, 42.4541)
 
 [node name="column-cilinder3" parent="EntranceRoom/Room/column-cilinder4" instance=ExtResource("14_2x8av")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 
 [node name="column-cilinder5" parent="EntranceRoom/Room" instance=ExtResource("14_2x8av")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.94339, 32.4541)
+transform = Transform3D(0.909824, -0.184093, -0.371928, -1.18898e-09, 0.896223, -0.443603, 0.414995, 0.403601, 0.815405, 15.8135, 7.2805, 28.8559)
 
 [node name="column-cilinder3" parent="EntranceRoom/Room/column-cilinder5" instance=ExtResource("14_2x8av")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
@@ -1590,79 +1596,79 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26, 7.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 26)
 
 [node name="bridge3" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 26)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 51.89, 8, 25.3151)
 
 [node name="bridge4" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 26)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 33.4928, 8, 25.7229)
 
 [node name="bridge5" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 38)
 
 [node name="bridge6" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 38)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 51.1455, 8, 37.292)
 
 [node name="bridge7" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 38)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 34.4281, 8, 37.6864)
 
 [node name="bridge8" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 50)
 
 [node name="bridge9" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 50)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 50.401, 8, 49.2689)
 
 [node name="bridge10" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 50)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 35.3633, 8, 49.6499)
 
 [node name="bridge11" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 62)
 
 [node name="bridge12" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 62)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 49.6565, 8, 61.2458)
 
 [node name="bridge13" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 62)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 36.2986, 8, 61.6134)
 
 [node name="bridge14" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 74)
 
 [node name="bridge15" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 74)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 48.912, 8, 73.2226)
 
 [node name="bridge16" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 74)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 37.2338, 8, 73.5769)
 
 [node name="bridge17" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 86)
 
 [node name="bridge18" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 86)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 48.1675, 8, 85.1995)
 
 [node name="bridge19" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 86)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 38.1691, 8, 85.5404)
 
 [node name="bridge20" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 98)
 
 [node name="bridge21" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 98)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 47.423, 8, 97.1764)
 
 [node name="bridge22" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 98)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 39.1043, 8, 97.5039)
 
 [node name="bridge23" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 110)
 
 [node name="bridge24" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 110)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 46.6785, 8, 109.153)
 
 [node name="bridge25" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 110)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 40.0395, 8, 109.467)
 
 [node name="bridge26" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 8, 122)
 
 [node name="bridge27" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 8, 122)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 45.934, 8, 121.13)
 
 [node name="bridge56" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(-0.976046, -0.108782, 0.188416, -6.6092e-08, -0.866025, -0.5, 0.217564, -0.488023, 0.845281, 54.8523, 20.1634, 121.876)
@@ -1671,88 +1677,91 @@ transform = Transform3D(-0.976046, -0.108782, 0.188416, -6.6092e-08, -0.866025, 
 transform = Transform3D(-0.976046, -0.108782, 0.188416, -6.6092e-08, -0.866025, -0.5, 0.217564, -0.488023, 0.845281, 52.5913, 26.1634, 111.732)
 
 [node name="bridge28" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 8, 122)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 40.9748, 8, 121.431)
 
 [node name="bridge29" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 20)
 
 [node name="bridge30" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 20)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 52.2622, 14, 19.3267)
 
 [node name="bridge31" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 20)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 33.0252, 14, 19.7412)
 
 [node name="bridge32" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 32)
 
 [node name="bridge33" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 32)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 51.5177, 14, 31.3036)
 
 [node name="bridge34" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 32)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 33.9605, 14, 31.7047)
 
 [node name="bridge35" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 44)
 
 [node name="bridge36" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 44)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 50.7732, 14, 43.2804)
 
 [node name="bridge37" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 44)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 34.8957, 14, 43.6682)
 
 [node name="bridge38" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 56)
 
 [node name="bridge39" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 56)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 50.0287, 14, 55.2573)
 
 [node name="bridge40" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 56)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 35.8309, 14, 55.6317)
 
 [node name="bridge41" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 68)
 
 [node name="bridge42" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 68)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 49.2842, 14, 67.2342)
 
 [node name="bridge43" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 68)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 36.7662, 14, 67.5952)
 
 [node name="bridge44" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 80)
 
 [node name="bridge45" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 80)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 48.5397, 14, 79.2111)
 
 [node name="bridge46" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 80)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 37.7014, 14, 79.5587)
 
 [node name="bridge47" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 92)
 
 [node name="bridge48" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 92)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 47.7952, 14, 91.188)
 
 [node name="bridge49" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 92)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 38.6367, 14, 91.5222)
 
 [node name="bridge50" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 104)
 
 [node name="bridge51" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 104)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 47.0507, 14, 103.165)
 
 [node name="bridge52" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 104)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 39.5719, 14, 103.486)
 
 [node name="bridge53" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 14, 116)
 
 [node name="bridge54" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 14, 116)
+transform = Transform3D(0.998074, 1.68413e-10, -0.0620415, 1.68413e-10, 1, 5.42384e-09, 0.0620415, -5.42384e-09, 0.998074, 46.3062, 14, 115.142)
 
 [node name="bridge55" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 14, 116)
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 40.5072, 14, 115.449)
+
+[node name="bridge58" parent="FloodedRoom/bridges" instance=ExtResource("20_rh4di")]
+transform = Transform3D(0.996958, 2.65921e-10, 0.0779371, 2.65921e-10, 1, -6.81348e-09, -0.0779371, 6.81348e-09, 0.996958, 41.4424, 14, 127.413)
 
 [node name="ceilings" type="Node3D" parent="FloodedRoom"]
 
@@ -1960,7 +1969,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17.41
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 8, 99)
 
 [node name="floor-island3" parent="FinalRoom" instance=ExtResource("22_dajit")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 8, 111)
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -20, 13.7422, 111)
 
 [node name="floor-island4" parent="FinalRoom" instance=ExtResource("22_dajit")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 8, 123)
@@ -2187,20 +2196,80 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4873, 8.91594, 128.507)
 [node name="wall-cave2" parent="FinalRoom" instance=ExtResource("11_u0q8i")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.7378, 7.93315, 131.503)
 
+[node name="column-square2" parent="FinalRoom" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 11.1053, 12.6044, 126.951)
+
+[node name="column-square3" parent="FinalRoom" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 5.10533, 12.6044, 126.951)
+
+[node name="column-square-base5" parent="FinalRoom" instance=ExtResource("23_wa0yi")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -1.26884, 13.7616, 126.93)
+
+[node name="column-square-base6" parent="FinalRoom" instance=ExtResource("23_wa0yi")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -1.26884, 12.7616, 126.93)
+
 [node name="column-square-base2" parent="FinalRoom" instance=ExtResource("23_wa0yi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.42445, 8.32694, 119.909)
-
-[node name="column-square2" parent="FinalRoom/column-square-base2" instance=ExtResource("24_onm4x")]
 
 [node name="column-square-base3" parent="FinalRoom" instance=ExtResource("23_wa0yi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.42445, 8.32694, 107.909)
 
 [node name="column-square2" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -2.80039, 3.79497, 6.04259)
+
+[node name="column-square9" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, 1.0389, 4.64432, 10.5745)
+
+[node name="column-square10" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, 4.87818, 5.49366, 15.1065)
+
+[node name="column-square3" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -2.80039, 3.79497, 6.04259)
+
+[node name="column-square4" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -6.63968, 2.94563, 1.51065)
+
+[node name="column-square5" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -10.479, 2.09628, -3.02129)
+
+[node name="column-square6" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -14.3183, 1.24693, -7.55323)
+
+[node name="column-square7" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -18.1575, 0.397586, -12.0852)
+
+[node name="column-square8" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(0.0915016, 0.639881, -0.763007, -0.98993, 0.141558, 6.67042e-08, 0.10801, 0.755323, 0.64639, -21.9968, -0.451761, -16.6171)
+
+[node name="column-square11" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -21.7031, 4.86669, 13.6905)
+
+[node name="column-square12" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -26.7422, 6.51984, 16.4967)
+
+[node name="column-square13" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -31.7813, 8.17298, 19.3028)
+
+[node name="column-square14" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -21.7031, 4.86669, 13.6905)
+
+[node name="column-square15" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -16.664, 3.21356, 10.8844)
+
+[node name="column-square16" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -11.6248, 1.56042, 8.07826)
+
+[node name="column-square17" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -6.58571, -0.092721, 5.27213)
+
+[node name="column-square18" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, -1.54658, -1.74586, 2.466)
+
+[node name="column-square19" parent="FinalRoom/column-square-base3" instance=ExtResource("24_onm4x")]
+transform = Transform3D(-0.259694, -0.839854, -0.47666, -0.960549, 0.275523, 0.037867, 0.0995281, 0.467689, -0.878272, 3.49254, -3.399, -0.340134)
 
 [node name="column-square-base4" parent="FinalRoom" instance=ExtResource("23_wa0yi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.42445, 8.32694, 95.909)
-
-[node name="column-square2" parent="FinalRoom/column-square-base4" instance=ExtResource("24_onm4x")]
 
 [node name="wall-windows-long2" parent="FinalRoom" instance=ExtResource("25_ldouy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4873, 7.84742, 119.508)
@@ -2995,22 +3064,26 @@ shape = SubResource("BoxShape3D_13fgm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.2626, 103.585)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D25"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4248, 0.143188, 4.33898)
+transform = Transform3D(0.491998, -0.83439, -0.248457, 2.32831e-10, 0.285387, -0.958412, 0.870596, 0.471537, 0.14041, -15.7682, -0.803638, 13.3379)
 shape = SubResource("BoxShape3D_8huwg")
 
 [node name="StaticBody3D27" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.2626, 91.5625)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D27"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4248, 0.143188, 4.33898)
+transform = Transform3D(0.762768, 0.640501, 0.0891258, 0.00113389, 0.136497, -0.99064, -0.646672, 0.755729, 0.103389, -11.6625, -0.572633, 14.7433)
 shape = SubResource("BoxShape3D_8huwg")
 
 [node name="StaticBody3D26" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.2626, 115.559)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D26"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4248, 0.143188, 4.33898)
-shape = SubResource("BoxShape3D_8huwg")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25809, 1.46155, 11.3779)
+shape = SubResource("BoxShape3D_c1ji8")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Hitboxes/StaticBody3D26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49701, 1.66611, 11.3779)
+shape = SubResource("BoxShape3D_bsccg")
 
 [node name="StaticBody3D37" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3858, 9.53001, 154.388)

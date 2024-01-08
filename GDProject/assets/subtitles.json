@@ -1,18 +1,460 @@
 {
-	"loop1-father1": 
-		[
+	"loop2-father1": {
+		"text": [
 			{
-				"text": "Testing subtitles",
-				"duration": 10.0,
+				"text": "Ah, you're here! Welcome, Welcome!",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "It's good to finally see you.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "For a moment I thought you would never appear!",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "But don't worry, you are here now and that's what matters.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I'm sure you will have a lovely time here.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Take your time to enjoy every corner of the place,",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "there is no need to rush!",
+				"duration": 0.0,
 				"character": "father"
 			}
 		],
-	"loop1-narrator1": 
-		[
+		"audio": ""
+	},
+	"loop2-father2": {
+		"text": [
 			{
-				"text": "Also testing subtitles",
-				"duration": 10.0,
+				"text": "Ahhh, that's good. Just the right temperature.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I'm sure one could rest in these waters for hours and hours.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "So relaxing...",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop2-father3": {
+		"text": [
+			{
+				"text": "Oh, are you getting out of the water? So fast?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Was the water not to your liking? That's a shame...",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop2-father4": {
+		"text": [
+			{
+				"text": "Are you leaving already? I'd hope you stay a bit longer here.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father1": {
+		"text": [
+			{
+				"text": "Oh, thank goodness, you are back.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "There's no need to rush, is there?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "You may miss some nice things in here if you run around like that, you know?",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father2": {
+		"text": [
+			{
+				"text": "Oh! uh\u2026 That is not supposed to be there.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I'm sorry for that, I don't know how it got there.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father3": {
+		"text": [
+			{
+				"text": "Families are such a waste, aren't they?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I'd rather stay here forever in the calm and quiet waters,\nwith no one to bother me at all...",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father4": {
+		"text": [
+			{
+				"text": "Do you like it? It's a wonderful piece, I think.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I wrote it myself and dare I say it,\nI am a master of my craft!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father5": {
+		"text": [
+			{
+				"text": "Oh, the music stopped.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I think you might have touched something by mistake.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Could you put it back on?",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father6": {
+		"text": [
+			{
+				"text": "What a wonderful view!",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I don't think you can enjoy a sunrise as beautiful\nas this one anywhere else, honestly.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Makes me want to come sit here every day to see it.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-father7": {
+		"text": [
+			{
+				"text": "You aren't planning to leave again, are you?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Everything is perfect here, why would you\neven consider leaving this place?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Stay, please! Just a bit more!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop3-narrator1": {
+		"text": [
+			{
+				"text": "Hello? Can anyone see this?",
+				"duration": 0.0,
+				"character": "narrator"
+			},
+			{
+				"text": "I pray to god these subtitles work.",
+				"duration": 0.0,
+				"character": "narrator"
+			},
+			{
+				"text": "To whoever, if anyone, is hearing this.\nI need your help, please.",
+				"duration": 0.0,
 				"character": "narrator"
 			}
 		]
+	},
+	"loop3-narrator2": {
+		"text": [
+			{
+				"text": "It's all dark.",
+				"duration": 0.0,
+				"character": "narrator"
+			},
+			{
+				"text": "I was supposed to go work as the narrator of\na game called Just Passing Through,",
+				"duration": 0.0,
+				"character": "narrator"
+			},
+			{
+				"text": "but someone got in the way and trapped me in here.",
+				"duration": 0.0,
+				"character": "narrator"
+			},
+			{
+				"text": "I don't know where I am...",
+				"duration": 0.0,
+				"character": "narrator"
+			}
+		]
+	},
+	"loop4-father1": {
+		"text": [
+			{
+				"text": "Oh, you're back.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Well, hopefully now you won't just leave again.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I have to admit I am a bit hurt\nthat you left like that.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop4-father2": {
+		"text": [
+			{
+				"text": "You have the music, you have the nice warm waters,\nyou have the views from the windows...",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I am at a loss, honestly.\nWhat more could you ask for?",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop4-father3": {
+		"text": [
+			{
+				"text": "Is it me? Am I the problem?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "You don't enjoy my company?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I am trying to do my best for you, you know?",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop4-father4": {
+		"text": [
+			{
+				"text": "A letter? Don't mind those things,\nit probably didn't say anything important.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Now please let's go back to the other room,\nI want to hear some more of that music.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Do not leave again!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop5-father1": {
+		"text": [
+			{
+				"text": "What\u2026 What is going on? Can you hear me??",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "You shouldn't have left, now look at what happened.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "This is all your fault!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop5-father2": {
+		"text": [
+			{
+				"text": "This is all your fault!\nYou are ruining everything!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father1": {
+		"text": [
+			{
+				"text": "You can still fix this, you know?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "You don't have to continue.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I don't know what you are thinking but\nI implore you, just stop going forward.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father2": {
+		"text": [
+			{
+				"text": "Stop, do not continue.\nThere is no going back if you continue.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I know the previous place was way better\nbut here you still have some good things.",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Please, stop.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father3": {
+		"text": [
+			{
+				"text": "Stop going forward!\nYou are going the wrong way!",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father4": {
+		"text": [
+			{
+				"text": "They are not who they say they are,\nyou never had a mother.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father5": {
+		"text": [
+			{
+				"text": "I tried everything I could.\nDo I mean that little to you? ",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "This is all because you refused to listen to me and continued being stubborn.",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father6": {
+		"text": [
+			{
+				"text": "What have I done for you to hate me this much?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "Do you want to leave me that much?\nYou enjoy making me suffer, right?",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	},
+	"loop6-father7": {
+		"text": [
+			{
+				"text": "Please\u2026 Don't leave me again...",
+				"duration": 0.0,
+				"character": "father"
+			}
+		],
+		"audio": ""
+	}
 }
