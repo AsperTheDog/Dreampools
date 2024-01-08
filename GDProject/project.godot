@@ -20,6 +20,7 @@ Transition="*res://scenes/components/Transition.tscn"
 MainCharacter="*res://scenes/components/character.tscn"
 Options="*res://scenes/components/Options.tscn"
 Subtitles="*res://scenes/components/Subtitles.tscn"
+Letters="*res://scenes/components/letters.tscn"
 
 [debug]
 

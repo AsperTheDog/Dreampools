@@ -3,10 +3,12 @@ extends Node3D
 @export var isInitialLoop: bool = false
 @export var nextLoop: PackedScene
 @export var nextArea: Area3D
+@export var flipSubtitles: bool = false
 
 var shouldJumpToNext: bool = false
 
 func _ready():
+	Subtitles.upsideDown = flipSubtitles
 	MainCharacter.trackInput = true
 	if isInitialLoop:
 		MainCharacter.show()
@@ -26,8 +28,5 @@ func _process(_delta):
 		get_tree().change_scene_to_packed(nextLoop)
 
 
-var playedSubtitles: Array[String] = []
-func playSubtitle(subtitle: String, force: bool = false):
-	if not subtitle in playedSubtitles: playedSubtitles.append(subtitle)
-	elif not force: return
+func playSubtitle(subtitle: String):
 	Subtitles.startSubtitle(subtitle)

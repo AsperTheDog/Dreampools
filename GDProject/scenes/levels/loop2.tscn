@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=3 uid="uid://ptnvxoxyyjjp"]
+[gd_scene load_steps=104 format=3 uid="uid://ptnvxoxyyjjp"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_4rs0r"]
 [ext_resource type="PackedScene" uid="uid://culk6i08w2ki5" path="res://scenes/levels/loop3.tscn" id="2_0hwga"]
@@ -29,6 +29,7 @@
 [ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="26_d7c1r"]
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="27_5sw06"]
 [ext_resource type="Script" path="res://scripts/crouch.gd" id="27_rcqf8"]
+[ext_resource type="Script" path="res://scripts/dialogueTrigger.gd" id="28_evir5"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
 panorama = ExtResource("2_2g2v5")
@@ -301,6 +302,21 @@ size = Vector3(5.0636, 1.2262, 4.23608)
 [sub_resource type="BoxShape3D" id="BoxShape3D_cpyg4"]
 size = Vector3(19.7086, 5.56848, 2.76446)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_iqwin"]
+size = Vector3(4.14136, 2.97803, 3.43823)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y54ov"]
+size = Vector3(2.83588, 2.58289, 50.3856)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i8jbd"]
+size = Vector3(42.4171, 2.27246, 9.36719)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fytbu"]
+size = Vector3(1, 1.71375, 2.05853)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_telju"]
+size = Vector3(1, 3.01953, 3.91254)
+
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("nextArea")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.578835, 5.97089, 165.535)
 script = ExtResource("1_4rs0r")
@@ -316,7 +332,7 @@ environment = SubResource("Environment_vixii")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(0.979088, 0.0154199, -0.202852, -7.67959e-09, 0.997123, 0.0757967, 0.203437, -0.0742117, 0.976272, 38.7388, 16.0701, 150.509)
 light_color = Color(1, 0.968627, 0.933333, 1)
-light_energy = 4.0
+light_energy = 3.0
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 0.412
@@ -3045,6 +3061,56 @@ script = ExtResource("27_rcqf8")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Area3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9339, -0.0303345, 0.379074)
 shape = SubResource("BoxShape3D_cpyg4")
+
+[node name="Dialogues" type="Node3D" parent="Interactions"]
+
+[node name="Area3D" type="Area3D" parent="Interactions/Dialogues"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04794, 0, 7.83171)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("28_evir5")
+dialogue = "loop2-father1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Dialogues/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.985474, 4.51843, 0.00572872)
+shape = SubResource("BoxShape3D_iqwin")
+
+[node name="Area3D2" type="Area3D" parent="Interactions/Dialogues"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6365, 10.2345, 35.2293)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("28_evir5")
+dialogue = "loop2-father2"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Dialogues/Area3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.19427, -1.22673, 5.08111)
+shape = SubResource("BoxShape3D_y54ov")
+
+[node name="Area3D3" type="Area3D" parent="Interactions/Dialogues"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.1747, 10.2345, 106.363)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("28_evir5")
+dialogue = "loop2-father3"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Dialogues/Area3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6981, -0.312426, 11.1648)
+shape = SubResource("BoxShape3D_i8jbd")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Interactions/Dialogues/Area3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8104, -0.459459, -6.84757)
+shape = SubResource("BoxShape3D_fytbu")
+
+[node name="Area3D4" type="Area3D" parent="Interactions/Dialogues"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1254, 10.2345, 152.704)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("28_evir5")
+dialogue = "loop2-father4"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Dialogues/Area3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7908, 0.0329247, 0.31192)
+shape = SubResource("BoxShape3D_telju")
 
 [node name="ambient" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4111, 10.8973, 67.614)

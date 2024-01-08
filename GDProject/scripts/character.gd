@@ -7,11 +7,11 @@ class_name Character extends CharacterBody3D
 
 const HALF_PI := PI / 2
 
-var current_speed := 5.0
+var current_speed := 3.0
 
-const walking_speed := 5.0
-const sprinting_speed := 7.0
-const crouching_speed := 3.0
+const walking_speed := 3.0
+const sprinting_speed := 5.0
+const crouching_speed := 2.0
 const water_multiplier := 0.6
 
 const jump_prep_crouch := -0.2
@@ -53,7 +53,7 @@ func _ready():
 
 
 func _process(delta: float):
-	if visible and Input.is_action_just_pressed("pause"):
+	if visible and Input.is_action_just_pressed("pause") and not Letters.visible: 
 		if not $Pause.paused:
 			$Pause.paused = true
 		elif not $Pause.busy:

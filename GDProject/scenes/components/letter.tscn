@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://i7rutu4tqi28"]
+
+[ext_resource type="PackedScene" uid="uid://cihauqiheuvyw" path="res://Pool-Pack/Models/letter.glb" id="1_qxe1y"]
+[ext_resource type="PackedScene" uid="uid://b7cmwxdkvvj7r" path="res://assets/models/table.glb" id="2_c6oxl"]
+[ext_resource type="Script" path="res://scripts/letter.gd" id="3_ta78o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_drww7"]
+size = Vector3(0.824898, 0.442871, 0.985826)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="letter" parent="." instance=ExtResource("1_qxe1y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.318102, 1.08537, 0)
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("2_c6oxl")]
+transform = Transform3D(0.337538, 0, -1.77636e-15, 0, 0.337538, 0, 1.77636e-15, 0, 0.337538, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58336, 0)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_ta78o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.254249, -0.278565, 0.00441013)
+shape = SubResource("BoxShape3D_drww7")

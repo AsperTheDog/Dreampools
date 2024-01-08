@@ -9,6 +9,8 @@ extends Control
 
 var currentSubs = {}
 
+var upsideDown: bool = false
+
 
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -16,8 +18,13 @@ func _ready():
 	Options.changedSubtitles.connect(func(active): visible = active)
 
 
+func toggleUpsideDown():
+	upsideDown = not upsideDown
+
+
 func startSubtitle(subtitle: String):
 	removeSubtitle(subtitle)
+	var container: VBoxContainer = $subtitleContainerRev if upsideDown else $subtitleContainer
 	var label = RichTextLabel.new()
 	label.name = subtitle
 	label.fit_content = true
@@ -25,8 +32,8 @@ func startSubtitle(subtitle: String):
 	label.set("theme_override_font_sizes/normal_font_size", 20)
 	label.set("theme_override_constants/outline_size", 6)
 	label.set("theme_override_colors/default_color", Color.WHITE)
-	$subtitleContainer.add_child(label)
-	$subtitleContainer.move_child(label, 0)
+	container.add_child(label)
+	container.move_child(label, 0)
 	currentSubs[subtitle] = {"label": label, "tween": null}
 	var audioLength := -1.0
 	if "audio" in subtitles[subtitle] and subtitles[subtitle]["audio"] != "":
