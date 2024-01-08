@@ -4,6 +4,8 @@ extends Node3D
 @export var nextLoop: PackedScene
 @export var nextArea: Area3D
 
+var shouldJumpToNext: bool = false
+
 func _ready():
 	MainCharacter.trackInput = true
 	if isInitialLoop:
@@ -14,13 +16,22 @@ func _ready():
 		Transition.doTransition(Transition.Type.FADE, true, 2, true)
 		await Transition.transitionFinished
 	if nextArea != null:
-		nextArea.body_entered.connect(func(_body): moveToNext())
+		nextArea.body_entered.connect(func(_body): shouldJumpToNext = true)
 	await get_tree().create_timer(1).timeout
 	Subtitles.startSubtitle("loop1-father1")
 	await get_tree().create_timer(1).timeout
 	Subtitles.startSubtitle("loop1-narrator1")
-	
 
 
-func moveToNext():
-	get_tree().change_scene_to_packed(nextLoop)
+var jumped: bool = false
+func _process(_delta):
+	if shouldJumpToNext and not jumped:
+		jumped = true
+		get_tree().change_scene_to_packed(nextLoop)
+
+
+var playedSubtitles: Array[String] = []
+func playSubtitle(subtitle: String, force: bool = false):
+	if not subtitle in playedSubtitles: playedSubtitles.append(subtitle)
+	elif not force: return
+	Subtitles.startSubtitle(subtitle)

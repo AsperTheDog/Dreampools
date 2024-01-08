@@ -1,16 +1,40 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxyeko60ff1bo"]
+[gd_scene load_steps=6 format=3 uid="uid://cxyeko60ff1bo"]
 
 [ext_resource type="AudioStream" uid="uid://dw7x7xvt1rf3j" path="res://assets/audio/music/Game_Score_-_demo_2.mp3" id="1_esjvr"]
+[ext_resource type="Script" path="res://scripts/vinyl.gd" id="2_46kxd"]
+[ext_resource type="AudioStream" uid="uid://4p26valaghro" path="res://assets/audio/effects/vinyl.wav" id="3_vayy0"]
+[ext_resource type="PackedScene" uid="uid://dtrg4n80ubgua" path="res://assets/models/phonograph.glb" id="4_fqh2t"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_1hqqi"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_2fywh"]
+size = Vector3(0.860474, 1, 0.711212)
 
-[node name="MeshInstance3D" type="MeshInstance3D"]
-mesh = SubResource("BoxMesh_1hqqi")
+[node name="MeshInstance3D" type="Node3D"]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.452535, 0)
 stream = ExtResource("1_esjvr")
 attenuation_model = 2
-unit_size = 25.0
+unit_size = 18.0
 autoplay = true
 bus = &"Music"
+
+[node name="Area3D" type="Area3D" parent="." node_paths=PackedStringArray("audioPlayer")]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("2_46kxd")
+audioPlayer = NodePath("../AudioStreamPlayer3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0697632, 0, -0.0259552)
+shape = SubResource("BoxShape3D_2fywh")
+
+[node name="vinyl" type="AudioStreamPlayer3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.452535, 0)
+stream = ExtResource("3_vayy0")
+attenuation_model = 2
+volume_db = -15.0
+autoplay = true
+bus = &"Effects"
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("4_fqh2t")]
+transform = Transform3D(2.98635, 0, 0, 0, 2.98635, 0, 0, 0, 2.98635, -0.0582376, -0.433244, 0.0248581)

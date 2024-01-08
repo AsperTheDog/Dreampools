@@ -1,22 +1,18 @@
 {
 	"loop1-father1": 
 		[
-			[
-				{
-					"text": "Testing subtitles",
-					"duration": 10.0,
-					"character": "father"
-				}
-			]
+			{
+				"text": "Testing subtitles",
+				"duration": 10.0,
+				"character": "father"
+			}
 		],
 	"loop1-narrator1": 
 		[
-			[
-				{
-					"text": "Also testing subtitles",
-					"duration": 10.0,
-					"character": "narrator"
-				}
-			]
+			{
+				"text": "Also testing subtitles",
+				"duration": 10.0,
+				"character": "narrator"
+			}
 		]
 }

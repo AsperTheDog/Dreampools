@@ -1,7 +1,7 @@
-[gd_scene load_steps=96 format=3 uid="uid://cyuh84seks261"]
+[gd_scene load_steps=97 format=3 uid="uid://cyuh84seks261"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_6qplw"]
-[ext_resource type="PackedScene" uid="uid://culk6i08w2ki5" path="res://scenes/levels/loop2.tscn" id="2_44xxq"]
+[ext_resource type="PackedScene" uid="uid://ptnvxoxyyjjp" path="res://scenes/levels/loop2.tscn" id="2_44xxq"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="2_cjgr5"]
 [ext_resource type="PackedScene" uid="uid://e0e14tpuqxv8" path="res://Pool-Pack/Objects/stairs.tscn" id="3_egv1a"]
 [ext_resource type="PackedScene" uid="uid://dypmthvkpx2xs" path="res://Pool-Pack/Objects/floor.tscn" id="4_gkm06"]
@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://4ds728y5wmhk" path="res://Pool-Pack/Objects/column_square.tscn" id="22_q2fk1"]
 [ext_resource type="PackedScene" uid="uid://b6ehiew7bohw2" path="res://Pool-Pack/Objects/wall_windows_long.tscn" id="23_dr8xa"]
 [ext_resource type="PackedScene" uid="uid://deqfcbrtar21p" path="res://Pool-Pack/Objects/pool_border_int.tscn" id="24_lbpct"]
+[ext_resource type="Script" path="res://scripts/crouch.gd" id="27_kwsv0"]
 [ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="28_avb7p"]
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="29_n06aa"]
 
@@ -85,11 +86,11 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_dgftk")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = 0.155
+shader_parameter/rotation = 1.77
 shader_parameter/environmentMap = ExtResource("2_cjgr5")
 shader_parameter/brightness = -0.095
-shader_parameter/saturation = 1.415
-shader_parameter/contrast = 1.315
+shader_parameter/saturation = 0.465
+shader_parameter/contrast = 1.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_01sjn"]
 
@@ -101,16 +102,6 @@ size = Vector3(46.28, 2.665, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_55aao"]
 size = Vector3(106.91, 2.665, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_kk27u"]
-render_priority = 0
-shader = ExtResource("16_dgftk")
-shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = 0.155
-shader_parameter/environmentMap = ExtResource("2_cjgr5")
-shader_parameter/brightness = -0.095
-shader_parameter/saturation = 1.415
-shader_parameter/contrast = 1.315
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4dqmp"]
 render_priority = 0
@@ -297,11 +288,14 @@ size = Vector3(7.11099, 3.13599, 10.6863)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1el2e"]
 size = Vector3(5.0636, 1.2262, 4.23608)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_6avrm"]
+size = Vector3(19.7086, 5.56848, 2.76446)
+
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("nextArea")]
 script = ExtResource("1_6qplw")
 isInitialLoop = true
 nextLoop = ExtResource("2_44xxq")
-nextArea = NodePath("Interactions/Area3D")
+nextArea = NodePath("Interactions/loop1End")
 
 [node name="StartingPos" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08428, 3.98805, -13.7358)
@@ -310,7 +304,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08428, 3.98805, -13.7358)
 environment = SubResource("Environment_vixii")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(-0.0661521, 0.0756307, -0.994939, -8.14424e-09, 0.997123, 0.0757968, 0.99781, 0.00501412, -0.0659618, 1.22087, -161.249, -159.235)
+transform = Transform3D(-0.997562, 0.00528995, -0.0695907, -5.96599e-09, 0.997123, 0.0757966, 0.0697915, 0.0756118, -0.994692, 14.0646, 11.4729, 35.7421)
 light_color = Color(1, 0.968627, 0.933333, 1)
 light_energy = 4.0
 shadow_enabled = true
@@ -1936,7 +1930,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.54
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="FinalRoom"]
 transform = Transform3D(-1.09321e-07, 1, 0, -2.50097, -4.37114e-08, 0, 0, 0, 12.2284, -36.0658, 10.0991, 113.742)
-material_override = SubResource("ShaderMaterial_kk27u")
+material_override = SubResource("ShaderMaterial_dn6wk")
 cast_shadow = 0
 ignore_occlusion_culling = true
 gi_mode = 0
@@ -3022,12 +3016,24 @@ shape = SubResource("BoxShape3D_dwcao")
 
 [node name="Interactions" type="Node3D" parent="."]
 
-[node name="Area3D" type="Area3D" parent="Interactions"]
+[node name="loop1End" type="Area3D" parent="Interactions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3769, 10.2613, 164.565)
+collision_layer = 4
+collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/loop1End"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.554138, -2.28375, -0.067749)
 shape = SubResource("BoxShape3D_1el2e")
+
+[node name="Area3D2" type="Area3D" parent="Interactions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8589, 8.99599, 99.1731)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("27_kwsv0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Area3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9339, -0.0303345, 0.379074)
+shape = SubResource("BoxShape3D_6avrm")
 
 [node name="ambient" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4111, 10.8973, 67.614)
@@ -3108,3 +3114,5 @@ unit_size = 4.0
 autoplay = true
 panning_strength = 0.5
 bus = &"Effects"
+
+[connection signal="body_entered" from="Interactions/Area3D2" to="Interactions/Area3D2" method="body_entered"]

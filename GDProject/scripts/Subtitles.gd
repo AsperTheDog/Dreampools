@@ -27,12 +27,11 @@ func startSubtitle(subtitle: String):
 	label.set("theme_override_colors/default_color", Color.WHITE)
 	$subtitleContainer.add_child(label)
 	$subtitleContainer.move_child(label, 0)
-	var choice = randi_range(0, subtitles[subtitle].size() - 1)
-	currentSubs[subtitle] = {"label": label, "tween": null, "choice": choice}
+	currentSubs[subtitle] = {"label": label, "tween": null}
 	var tween = create_tween()
-	for stage in subtitles[subtitle][choice].size():
+	for stage in subtitles[subtitle].size():
 		tween.tween_callback(_assignSubtitle.bind(subtitle, stage))
-		tween.tween_interval(subtitles[subtitle][choice][stage]["duration"])
+		tween.tween_interval(subtitles[subtitle][stage]["duration"])
 	tween.tween_callback(removeSubtitle.bind(subtitle))
 	currentSubs[subtitle]["tween"] = tween
 
@@ -46,7 +45,6 @@ func removeSubtitle(subtitle: String):
 
 
 func _assignSubtitle(subtitle: String, stage: int):
-	var choice = currentSubs[subtitle]["choice"]
-	currentSubs[subtitle]["label"].text = "[center]"+subtitles[subtitle][choice][stage]["text"]+"[/center]"
-	var charaData: Color = characterColors[subtitles[subtitle][choice][stage]["character"]]
+	currentSubs[subtitle]["label"].text = "[center]"+subtitles[subtitle][stage]["text"]+"[/center]"
+	var charaData: Color = characterColors[subtitles[subtitle][stage]["character"]]
 	currentSubs[subtitle]["label"].set("theme_override_colors/font_outline_color", charaData)

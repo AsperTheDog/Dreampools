@@ -27,6 +27,8 @@ var lerp_speed := default_lerp_speed
 
 var direction := Vector3.ZERO
 
+var hasShownCrouch: bool = false
+
 var in_water: bool = false:
 	set(value):
 		if value == in_water: return
@@ -59,6 +61,12 @@ func _process(delta: float):
 		else:
 			Options.hide()
 			$Pause.busy = false
+	if $head/Camera3D/RayCast3D.is_colliding():
+		$Control/Button.show()
+		if Input.is_action_just_pressed("interact"):
+			$head/Camera3D/RayCast3D.get_collider().interact()
+	else:
+		$Control/Button.hide()
 
 
 var charaRotation: Vector2 = Vector2.ZERO
@@ -166,6 +174,7 @@ func applyBob(delta):
 			$steps.step(StepPlayer.StepType.WALKING if intensity <= midSpeed else StepPlayer.StepType.RUNNING)
 		nextInterval += PI * 2
 
+
 func setLookingPos(dir: Vector2):
 	rotation.y = dir.y
 	head.rotation.x = dir.x
@@ -177,6 +186,15 @@ func standUp():
 	$AnimationPlayer.play("standUp")
 	await get_tree().create_timer($AnimationPlayer.get_animation("standUp").length).timeout
 	standingUp = false
+
+
+func showCrouchPrompt():
+	if hasShownCrouch: return
+	hasShownCrouch = true
+	$Control/Button3.show()
+	$Control/AnimationPlayer.play("crouchPrompt")
+	await get_tree().create_timer(4).timeout
+	$Control/Button3.hide()
 
 
 func _on_visibility_changed():
