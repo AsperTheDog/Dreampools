@@ -47,13 +47,18 @@
 	"loop2-father2": {
 		"text": [
 			{
-				"text": "Ahhh, that's good. Just the right temperature.",
-				"duration": 0.0,
+				"text": "Ahhh, that's good.",
+				"duration": 3.2,
+				"character": "father"
+			},
+			{
+				"text": "Just the right temperature.",
+				"duration": 3.7,
 				"character": "father"
 			},
 			{
 				"text": "I'm sure one could rest in these waters for hours and hours.",
-				"duration": 0.0,
+				"duration": 5.9,
 				"character": "father"
 			},
 			{
@@ -68,12 +73,12 @@
 		"text": [
 			{
 				"text": "Oh, are you getting out of the water? So fast?",
-				"duration": 0.0,
+				"duration": 5.9,
 				"character": "father"
 			},
 			{
 				"text": "Was the water not to your liking?",
-				"duration": 0.0,
+				"duration": 3.8,
 				"character": "father"
 			},
 			{
@@ -88,7 +93,7 @@
 		"text": [
 			{
 				"text": "Are you leaving already?",
-				"duration": 0.0,
+				"duration": 3.6,
 				"character": "father"
 			},
 			{
@@ -103,12 +108,12 @@
 		"text": [
 			{
 				"text": "Oh, thank goodness, you are back.",
-				"duration": 0.0,
+				"duration": 3.6,
 				"character": "father"
 			},
 			{
 				"text": "There's no need to rush, is there?",
-				"duration": 0.0,
+				"duration": 5.7,
 				"character": "father"
 			},
 			{
@@ -122,8 +127,8 @@
 	"loop3-father2": {
 		"text": [
 			{
-				"text": "Oh! uh\u2026 That is not supposed to be there.",
-				"duration": 0.0,
+				"text": "Oh! uh... That is not supposed to be there.",
+				"duration": 5.7,
 				"character": "father"
 			},
 			{
@@ -138,7 +143,7 @@
 		"text": [
 			{
 				"text": "Families are such a waste, aren't they?",
-				"duration": 0.0,
+				"duration": 4.5,
 				"character": "father"
 			},
 			{
@@ -153,7 +158,7 @@
 		"text": [
 			{
 				"text": "Do you like it? It's a wonderful piece, I think.",
-				"duration": 0.0,
+				"duration": 5.7,
 				"character": "father"
 			},
 			{
@@ -168,12 +173,12 @@
 		"text": [
 			{
 				"text": "Oh, the music stopped.",
-				"duration": 0.0,
+				"duration": 3.2,
 				"character": "father"
 			},
 			{
 				"text": "I think you might have touched something by mistake.",
-				"duration": 0.0,
+				"duration": 3.8,
 				"character": "father"
 			},
 			{
@@ -188,12 +193,12 @@
 		"text": [
 			{
 				"text": "What a wonderful view!",
-				"duration": 0.0,
+				"duration": 3.3,
 				"character": "father"
 			},
 			{
 				"text": "I don't think you can enjoy a sunrise as beautiful\nas this one anywhere else, honestly.",
-				"duration": 0.0,
+				"duration": 10.3,
 				"character": "father"
 			},
 			{
@@ -208,12 +213,12 @@
 		"text": [
 			{
 				"text": "You aren't planning to leave again, are you?",
-				"duration": 0.0,
+				"duration": 4.0,
 				"character": "father"
 			},
 			{
 				"text": "Everything is perfect here, why would you\neven consider leaving this place?",
-				"duration": 0.0,
+				"duration": 5.6,
 				"character": "father"
 			},
 			{
@@ -227,18 +232,23 @@
 	"loop3-narrator1": {
 		"text": [
 			{
-				"text": "Hello? Can anyone see this?",
-				"duration": 0.0,
+				"text": "Hello?",
+				"duration": 3.5,
+				"character": "narrator"
+			},
+			{
+				"text": "Can anyone see this?",
+				"duration": 3.0,
 				"character": "narrator"
 			},
 			{
 				"text": "I pray to god these subtitles work.",
-				"duration": 0.0,
+				"duration": 4.5,
 				"character": "narrator"
 			},
 			{
 				"text": "To whoever, if anyone, is hearing this.\nI need your help, please.",
-				"duration": 0.0,
+				"duration": 7.5,
 				"character": "narrator"
 			}
 		]
@@ -247,22 +257,22 @@
 		"text": [
 			{
 				"text": "It's all dark.",
-				"duration": 0.0,
+				"duration": 2.5,
 				"character": "narrator"
 			},
 			{
 				"text": "I was supposed to go work as the narrator of\na game called Just Passing Through,",
-				"duration": 0.0,
+				"duration": 7.5,
 				"character": "narrator"
 			},
 			{
 				"text": "but someone got in the way and trapped me in here.",
-				"duration": 0.0,
+				"duration": 5.0,
 				"character": "narrator"
 			},
 			{
 				"text": "I don't know where I am...",
-				"duration": 0.0,
+				"duration": 4.0,
 				"character": "narrator"
 			}
 		]
@@ -271,12 +281,12 @@
 		"text": [
 			{
 				"text": "Oh, you're back.",
-				"duration": 0.0,
+				"duration": 2.9,
 				"character": "father"
 			},
 			{
 				"text": "Well, hopefully now you won't just leave again.",
-				"duration": 0.0,
+				"duration": 4.2,
 				"character": "father"
 			},
 			{
@@ -291,7 +301,7 @@
 		"text": [
 			{
 				"text": "You have the music, you have the nice warm waters,\nyou have the views from the windows...",
-				"duration": 0.0,
+				"duration": 8.3,
 				"character": "father"
 			},
 			{
@@ -306,12 +316,12 @@
 		"text": [
 			{
 				"text": "Is it me? Am I the problem?",
-				"duration": 0.0,
+				"duration": 4.0,
 				"character": "father"
 			},
 			{
 				"text": "You don't enjoy my company?",
-				"duration": 0.0,
+				"duration": 4.1,
 				"character": "father"
 			},
 			{
@@ -325,13 +335,18 @@
 	"loop4-father4": {
 		"text": [
 			{
-				"text": "A letter? Don't mind those things,\nit probably didn't say anything important.",
-				"duration": 0.0,
+				"text": "A letter? Don't mind those things,",
+				"duration": 4.7,
+				"character": "father"
+			},
+			{
+				"text": "it probably didn't say anything important.",
+				"duration": 4.8,
 				"character": "father"
 			},
 			{
 				"text": "Now please let's go back to the other room,\nI want to hear some more of that music.",
-				"duration": 0.0,
+				"duration": 7.4,
 				"character": "father"
 			},
 			{
@@ -345,13 +360,13 @@
 	"loop5-father1": {
 		"text": [
 			{
-				"text": "What\u2026 What is going on? Can you hear me??",
-				"duration": 0.0,
+				"text": "What... What's going on? Can you hear me??",
+				"duration": 3.8,
 				"character": "father"
 			},
 			{
 				"text": "You shouldn't have left, now look at what happened.",
-				"duration": 0.0,
+				"duration": 3.0,
 				"character": "father"
 			},
 			{
@@ -376,12 +391,12 @@
 		"text": [
 			{
 				"text": "You can still fix this, you know?",
-				"duration": 0.0,
+				"duration": 2.9,
 				"character": "father"
 			},
 			{
 				"text": "You don't have to continue.",
-				"duration": 0.0,
+				"duration": 2.8,
 				"character": "father"
 			},
 			{
@@ -396,12 +411,12 @@
 		"text": [
 			{
 				"text": "Stop, do not continue.\nThere is no going back if you continue.",
-				"duration": 0.0,
+				"duration": 8.5,
 				"character": "father"
 			},
 			{
 				"text": "I know the previous place was way better\nbut here you still have some good things.",
-				"duration": 0.0,
+				"duration": 7.2,
 				"character": "father"
 			},
 			{
@@ -425,7 +440,12 @@
 	"loop6-father4": {
 		"text": [
 			{
-				"text": "They are not who they say they are,\nyou never had a mother.",
+				"text": "They are not who they say they are,",
+				"duration": 4.0,
+				"character": "father"
+			},
+			{
+				"text": "you never had a mother.",
 				"duration": 0.0,
 				"character": "father"
 			}
@@ -436,11 +456,11 @@
 		"text": [
 			{
 				"text": "I tried everything I could.\nDo I mean that little to you? ",
-				"duration": 0.0,
+				"duration": 5.0,
 				"character": "father"
 			},
 			{
-				"text": "This is all because you refused to listen to me and continued being stubborn.",
+				"text": "This is all because you refused to listen to me\nand continued being stubborn.",
 				"duration": 0.0,
 				"character": "father"
 			}
@@ -451,11 +471,16 @@
 		"text": [
 			{
 				"text": "What have I done for you to hate me this much?",
-				"duration": 0.0,
+				"duration": 4.5,
 				"character": "father"
 			},
 			{
-				"text": "Do you want to leave me that much?\nYou enjoy making me suffer, right?",
+				"text": "Do you want to leave me that much?",
+				"duration": 2.7,
+				"character": "father"
+			},
+			{
+				"text": "You enjoy making me suffer, right?",
 				"duration": 0.0,
 				"character": "father"
 			}
@@ -465,7 +490,12 @@
 	"loop6-father7": {
 		"text": [
 			{
-				"text": "Please\u2026 Don't leave me again...",
+				"text": "Please...",
+				"duration": 3.7,
+				"character": "father"
+			},
+			{
+				"text": "Don't leave me again...",
 				"duration": 0.0,
 				"character": "father"
 			}
