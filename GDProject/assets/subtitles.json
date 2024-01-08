@@ -2,33 +2,38 @@
 	"loop2-father1": {
 		"text": [
 			{
-				"text": "Ah, you're here! Welcome, Welcome!",
-				"duration": 0.0,
+				"text": "Ah, you're here!",
+				"duration": 2.7,
+				"character": "father"
+			},
+			{
+				"text": "Welcome, Welcome!",
+				"duration": 2.3,
 				"character": "father"
 			},
 			{
 				"text": "It's good to finally see you.",
-				"duration": 0.0,
+				"duration": 2.6,
 				"character": "father"
 			},
 			{
 				"text": "For a moment I thought you would never appear!",
-				"duration": 0.0,
+				"duration": 3.9,
 				"character": "father"
 			},
 			{
 				"text": "But don't worry, you are here now and that's what matters.",
-				"duration": 0.0,
+				"duration": 7.0,
 				"character": "father"
 			},
 			{
 				"text": "I'm sure you will have a lovely time here.",
-				"duration": 0.0,
+				"duration": 3.3,
 				"character": "father"
 			},
 			{
 				"text": "Take your time to enjoy every corner of the place,",
-				"duration": 0.0,
+				"duration": 4.7,
 				"character": "father"
 			},
 			{
@@ -67,7 +72,12 @@
 				"character": "father"
 			},
 			{
-				"text": "Was the water not to your liking? That's a shame...",
+				"text": "Was the water not to your liking?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "That's a shame...",
 				"duration": 0.0,
 				"character": "father"
 			}
@@ -77,7 +87,12 @@
 	"loop2-father4": {
 		"text": [
 			{
-				"text": "Are you leaving already? I'd hope you stay a bit longer here.",
+				"text": "Are you leaving already?",
+				"duration": 0.0,
+				"character": "father"
+			},
+			{
+				"text": "I'd hope you stay a bit longer here.",
 				"duration": 0.0,
 				"character": "father"
 			}
