@@ -79,7 +79,7 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_vp674")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(4.52, 0)
+shader_parameter/rotation = Vector2(5.85, 0)
 shader_parameter/environmentMap = ExtResource("3_wujyo")
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 0.2
@@ -339,7 +339,7 @@ mesh = SubResource("BoxMesh_6xvds")
 skeleton = NodePath("../..")
 
 [node name="stairFloor6" type="MeshInstance3D" parent="beginning/Stairs"]
-transform = Transform3D(1.50052, 0, 0, 0, 1, 0, 0, 0, 31.8181, 0.72097, 14.9371, 7.84071)
+transform = Transform3D(1.50052, 0, 0, 0, 1, 0, 0, 0, 31.8181, 0.720963, 14.9371, -25.7003)
 mesh = SubResource("BoxMesh_6xvds")
 skeleton = NodePath("../..")
 

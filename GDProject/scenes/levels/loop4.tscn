@@ -2046,7 +2046,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.4146, 8.96536, 116.92)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.4146, 8.96536, 110.92)
 
 [node name="floor181" parent="FinalRoom" instance=ExtResource("5_ykmb0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4146, 8.96536, 104.92)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.0127, 8.9625, 104.92)
 
 [node name="floor184" parent="FinalRoom" instance=ExtResource("5_ykmb0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4146, 8.96536, 122.92)
@@ -2058,7 +2058,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4146, 8.96536, 128.92)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4146, 8.96536, 116.92)
 
 [node name="floor187" parent="FinalRoom" instance=ExtResource("5_ykmb0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4146, 8.96536, 110.92)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.1493, 8.95647, 110.92)
 
 [node name="wall38" parent="FinalRoom" instance=ExtResource("6_d0xcb")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 9.50312, 8, 125.491)
@@ -2117,7 +2117,7 @@ material_override = SubResource("ShaderMaterial_4dqmp")
 mesh = SubResource("PlaneMesh_wq84f")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="FinalRoom"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.3365, 8.7327, 117.649)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5491, 8.7327, 117.649)
 material_override = SubResource("ShaderMaterial_kavja")
 mesh = SubResource("PlaneMesh_d8qs8")
 
@@ -2668,7 +2668,7 @@ transform = Transform3D(1, 0, 0, 0, 44.7253, 0, 0, 0, 52.4349, -4.97249, -4.0769
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D15" type="MeshInstance3D" parent="Occlusion"]
-transform = Transform3D(1, 0, 0, 0, 22.4259, 0, 0, 0, 27.0162, -43.203, 11.1652, 72.2582)
+transform = Transform3D(1.0021, 0, 0, 0, 28.0934, 0, 0, 0, 27.0729, -43.203, 8.34162, 72.2582)
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D17" type="MeshInstance3D" parent="Occlusion"]
@@ -2676,7 +2676,7 @@ transform = Transform3D(1, 0, 0, 0, 22.4259, 0, 0, 0, 17.5605, -37.203, 11.1652,
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D21" type="MeshInstance3D" parent="Occlusion"]
-transform = Transform3D(1, 0, 0, 0, 22.4259, 0, 0, 0, 43.9013, -37.203, 11.1652, 148.258)
+transform = Transform3D(1, 0, 0, 0, 22.4259, 0, 0, 0, 43.9013, -37.203, 10.6821, 148.258)
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D22" type="MeshInstance3D" parent="Occlusion"]
@@ -2696,11 +2696,11 @@ transform = Transform3D(-1, 0, -1.22044e-05, 0, 22.4259, 0, 8.74228e-08, 0, -139
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D19" type="MeshInstance3D" parent="Occlusion"]
-transform = Transform3D(1, 0, 0, 0, 8.07332, 0, 0, 0, 33.365, -37.203, 18.1652, 117.258)
+transform = Transform3D(1, 0, 0, 0, 11.3368, 0, 0, 0, 33.365, -37.203, 18.1652, 117.258)
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D20" type="MeshInstance3D" parent="Occlusion"]
-transform = Transform3D(1, 0, 0, 0, 8.07332, 0, 0, 0, 33.365, -37.203, 5.16523, 117.258)
+transform = Transform3D(1, 0, 0, 0, 11.8316, 0, 0, 0, 33.365, -35.9174, 3.03682, 117.258)
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D18" type="MeshInstance3D" parent="Occlusion"]

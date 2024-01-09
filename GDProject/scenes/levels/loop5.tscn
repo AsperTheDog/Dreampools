@@ -2768,6 +2768,10 @@ mesh = SubResource("BoxMesh_smd1b")
 transform = Transform3D(2.72779, 3.97862e-06, -6.82231e-12, -2.38471e-07, 45.5101, 4.92543e-06, -2.90732e-14, -3.97862e-06, 56.3403, -16.2577, 13.6273, -2.04291)
 mesh = SubResource("BoxMesh_smd1b")
 
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Occlusion"]
+transform = Transform3D(-3.57706e-07, 45.5101, 4.92543e-06, -2.72779, -5.96793e-06, 6.60701e-12, -2.90732e-14, -3.97862e-06, 56.3403, 5.7423, 31.6273, -2.04291)
+mesh = SubResource("BoxMesh_smd1b")
+
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="Occlusion"]
 transform = Transform3D(-4.37114e-08, 0, 51.7906, 0, 31.3077, 0, -1, 0, -2.26384e-06, -18.2147, 7.91457, 69.7782)
 mesh = SubResource("BoxMesh_smd1b")
