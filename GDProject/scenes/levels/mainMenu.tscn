@@ -452,7 +452,7 @@ offset_top = -34.0
 offset_right = -15.0
 offset_bottom = -11.0
 theme_override_font_sizes/normal_font_size = 14
-text = "Game made by Guillermo Muñoz, Filip Lundström and Levente Vargas"
+text = "Game made by Guillermo Muñoz, Filip Lundström and Levente Varga"
 fit_content = true
 
 [node name="Panel" type="Panel" parent="Control"]
