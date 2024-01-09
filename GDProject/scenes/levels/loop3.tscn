@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=3 uid="uid://culk6i08w2ki5"]
+[gd_scene load_steps=111 format=3 uid="uid://culk6i08w2ki5"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_4rs0r"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="2_2g2v5"]
@@ -9,7 +9,7 @@
 [ext_resource type="Shader" uid="uid://bg4e6jb3sk0f7" path="res://environment/WaterShader.tres" id="6_hlf41"]
 [ext_resource type="PackedScene" uid="uid://chpegmwiicvdx" path="res://Pool-Pack/Objects/pool_border_lat_no_floor.tscn" id="7_ljdnn"]
 [ext_resource type="PackedScene" uid="uid://bg3f525w7gkea" path="res://Pool-Pack/Objects/cave.tscn" id="8_qaiju"]
-[ext_resource type="Material" uid="uid://ck85866uy8m40" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="9_p1ssg"]
+[ext_resource type="Material" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="9_p1ssg"]
 [ext_resource type="PackedScene" uid="uid://c04h4406ggm3v" path="res://Pool-Pack/Objects/wall_cave.tscn" id="10_lfysw"]
 [ext_resource type="PackedScene" uid="uid://bxon1rgthtgey" path="res://Pool-Pack/Objects/wall_border.tscn" id="11_72j1e"]
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="12_bsp4x"]
@@ -208,19 +208,13 @@ size = Vector3(7.03392, 9.06294, 15.4591)
 size = Vector3(18.5259, 6.25005, 1.98627)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ng14s"]
-size = Vector3(11.4568, 4.73585, 27.983)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_1wpva"]
-size = Vector3(43.8752, 8.59949, 6.60068)
+size = Vector3(11.457, 4.736, 31.048)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vreeh"]
 size = Vector3(60.5707, 0.991621, 20.773)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rs1so"]
-size = Vector3(7.37963, 8.59949, 9.5964)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_iujix"]
-size = Vector3(47.1408, 5.63129, 9.5964)
+size = Vector3(30, 8.854, 9.596)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jbbcj"]
 size = Vector3(0.233579, 4.68772, 71.5661)
@@ -2903,36 +2897,25 @@ shape = SubResource("BoxShape3D_bll5a")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9237, 9.02939, 101.755)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D16"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.69506, 2.31493, 12.7512)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.695, 2.315, 14.271)
 shape = SubResource("BoxShape3D_ng14s")
 
 [node name="StaticBody3D28" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9237, 9.02939, 101.755)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D28"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51413, 4.24675, 23.4424)
-shape = SubResource("BoxShape3D_1wpva")
-
 [node name="StaticBody3D33" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.5319, 9.02939, 91.4701)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D33"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74534, -0.539177, 30.8345)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74535, -0.539177, 30.8345)
 shape = SubResource("BoxShape3D_vreeh")
 
 [node name="StaticBody3D29" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9237, 9.02939, 101.755)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D29"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.4142, 4.24675, 24.9403)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.064, 4.247, 24.94)
 shape = SubResource("BoxShape3D_rs1so")
-
-[node name="StaticBody3D30" type="StaticBody3D" parent="Hitboxes"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9237, 9.02939, 101.755)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D30"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.14319, 5.73085, 24.9403)
-shape = SubResource("BoxShape3D_iujix")
 
 [node name="StaticBody3D20" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.9237, 9.02939, 145.755)
