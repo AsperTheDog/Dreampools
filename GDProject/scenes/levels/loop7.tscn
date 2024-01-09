@@ -2064,3 +2064,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -182.286, -32.4403, 117.625)
 stream = ExtResource("27_okyem")
 volume_db = -50.0
 autoplay = true
+bus = &"Music"
