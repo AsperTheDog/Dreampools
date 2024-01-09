@@ -9,7 +9,7 @@
 [ext_resource type="Shader" uid="uid://bg4e6jb3sk0f7" path="res://environment/WaterShader.tres" id="6_hlf41"]
 [ext_resource type="PackedScene" uid="uid://chpegmwiicvdx" path="res://Pool-Pack/Objects/pool_border_lat_no_floor.tscn" id="7_ljdnn"]
 [ext_resource type="PackedScene" uid="uid://bg3f525w7gkea" path="res://Pool-Pack/Objects/cave.tscn" id="8_qaiju"]
-[ext_resource type="Material" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="9_p1ssg"]
+[ext_resource type="Material" uid="uid://ck85866uy8m40" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="9_p1ssg"]
 [ext_resource type="PackedScene" uid="uid://c04h4406ggm3v" path="res://Pool-Pack/Objects/wall_cave.tscn" id="10_lfysw"]
 [ext_resource type="PackedScene" uid="uid://bxon1rgthtgey" path="res://Pool-Pack/Objects/wall_border.tscn" id="11_72j1e"]
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="12_bsp4x"]

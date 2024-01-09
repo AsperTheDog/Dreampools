@@ -1775,7 +1775,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5005, 0.00939941, 0.19529
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -142.462, -33.8497, 120.527)
 
 [node name="wall34" parent="Tunnel" instance=ExtResource("6_g7rs8")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -139.462, -31.8497, 117.527)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -139.46, -31.8497, 117.527)
 
 [node name="wall-medium-door2" parent="Tunnel" instance=ExtResource("14_msfwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -145.462, -32.9476, 117.655)

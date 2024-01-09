@@ -6,6 +6,23 @@
 [ext_resource type="PackedScene" uid="uid://dtjp5vorbb42p" path="res://Pool-Pack/Models/door-galp.glb" id="2_oimxg"]
 [ext_resource type="PackedScene" uid="uid://de8j2oeafl4wv" path="res://Pool-Pack/Models/door.glb" id="3_hbxcn"]
 
+[sub_resource type="Animation" id="Animation_3du8d"]
+length = 0.001
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door/door-galp")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("door")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
 [sub_resource type="Animation" id="Animation_xapg7"]
 resource_name = "open-door"
 length = 4.06667
@@ -24,23 +41,6 @@ tracks/1/path = NodePath("door")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 1.5, 1, 0, 0, 0, 1, 4.03333, 1, 0, -0.793353, 0, 0.608761)
-
-[sub_resource type="Animation" id="Animation_3du8d"]
-length = 0.001
-tracks/0/type = "rotation_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("door/door-galp")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
-tracks/1/type = "rotation_3d"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("door")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sydac"]
 _data = {
