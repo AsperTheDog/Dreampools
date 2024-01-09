@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beqvg4uw21nie"
+path="res://.godot/imported/Tunnel track mp3.mp3-f8340311a8aac3d913c18b0a4e5d6e51.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/music/Tunnel track mp3.mp3"
+dest_files=["res://.godot/imported/Tunnel track mp3.mp3-f8340311a8aac3d913c18b0a4e5d6e51.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

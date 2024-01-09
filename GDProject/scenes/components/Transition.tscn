@@ -44,6 +44,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="End" parent="." instance=ExtResource("2_kfgxd")]
-visible = false
-layout_mode = 1
+[node name="End" parent="CanvasLayer" instance=ExtResource("2_kfgxd")]
+
+[editable path="CanvasLayer/End"]

@@ -31,8 +31,8 @@
 [ext_resource type="Script" path="res://scripts/DialogueContinuation.gd" id="27_mq8ij"]
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="28_kq3aa"]
 [ext_resource type="PackedScene" uid="uid://cxyeko60ff1bo" path="res://scenes/components/vinyl.tscn" id="30_ptwpi"]
-[ext_resource type="AudioStream" uid="uid://dw7x7xvt1rf3j" path="res://assets/audio/music/Game_Score_-_demo_2.mp3" id="31_gpv43"]
 [ext_resource type="PackedScene" uid="uid://i7rutu4tqi28" path="res://scenes/components/letter.tscn" id="32_630fr"]
+[ext_resource type="AudioStream" uid="uid://d4evkm4fc6oy0" path="res://assets/audio/music/Game Score track 2 reverse.wav" id="32_tnam0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
 panorama = ExtResource("3_kyg1n")
@@ -336,7 +336,7 @@ loops = 0.0
 size = Vector3(1, 5.41449, 38.4731)
 
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("nextArea")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2.005, 47.731, -1.693)
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 1.995, 47.718, -1.676)
 script = ExtResource("1_p4m60")
 nextLoop = ExtResource("2_3olcy")
 nextArea = NodePath("Interactions/Area3D")
@@ -3200,6 +3200,8 @@ shape = SubResource("CylinderShape3D_pi7an")
 
 [node name="Area3D" type="Area3D" parent="Interactions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3769, 10.2613, 164.565)
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Interactions/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.554136, 2.9497, -0.067749)
@@ -3301,7 +3303,7 @@ bus = &"Effects"
 
 [node name="MeshInstance3D" parent="." instance=ExtResource("30_ptwpi")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48.9967, 16.66, 103.342)
-song = ExtResource("31_gpv43")
+song = ExtResource("32_tnam0")
 
 [node name="Node3D" parent="." instance=ExtResource("32_630fr")]
 transform = Transform3D(-0.776585, 0, 0.630012, 0, 1, 0, -0.630012, 0, -0.776585, -14.5787, 8.74204, 153.829)

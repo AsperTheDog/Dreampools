@@ -2,10 +2,12 @@ extends Area3D
 
 @export var door: Node3D
 @export var white: Node3D
+@export var music: Node3D
 
 
 func interact():
 	white.show()
+	music.finish()
 	door.get_node("AnimationPlayer").play("open-door")
 	$sound2.play()
 	await get_tree().create_timer(1.0333).timeout

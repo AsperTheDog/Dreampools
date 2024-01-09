@@ -49,4 +49,5 @@ visible = false
 layout_mode = 2
 
 [node name="voices" type="AudioStreamPlayer" parent="."]
+volume_db = 8.0
 bus = &"Voice"

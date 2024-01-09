@@ -60,5 +60,4 @@ func _whiteFade(value: float):
 
 
 func end():
-	$End.show()
-	$End.end()
+	$CanvasLayer/End.end()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://1alphowm0se6"]
+[gd_scene load_steps=109 format=3 uid="uid://1alphowm0se6"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_1vany"]
 [ext_resource type="PackedScene" uid="uid://ybqotrot4m81" path="res://scenes/levels/loop5.tscn" id="2_s7dqg"]
@@ -32,7 +32,9 @@
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="29_lp5dm"]
 [ext_resource type="PackedScene" uid="uid://qh5bg0dxwacw" path="res://scenes/components/frame.tscn" id="30_vpilw"]
 [ext_resource type="PackedScene" uid="uid://cxyeko60ff1bo" path="res://scenes/components/vinyl.tscn" id="32_0wlhk"]
+[ext_resource type="AudioStream" uid="uid://coex85ftcqspc" path="res://assets/audio/music/Game Score track 2.wav" id="33_8x80p"]
 [ext_resource type="PackedScene" uid="uid://i7rutu4tqi28" path="res://scenes/components/letter.tscn" id="33_cryrh"]
+[ext_resource type="AudioStream" uid="uid://g7k2ht734elt" path="res://assets/audio/music/Game Score track 2 loop.wav" id="34_3lk2f"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
 panorama = ExtResource("3_i8vyf")
@@ -3335,6 +3337,8 @@ transform = Transform3D(-0.00786316, -1.29012e-10, -7.1255e-10, -3.87035e-10, 0.
 
 [node name="MeshInstance3D" parent="." instance=ExtResource("32_0wlhk")]
 transform = Transform3D(-0.0651501, 0.994423, -0.0829368, 0.786386, 4.47035e-08, -0.617736, -0.614291, -0.105466, -0.782, 40.8771, 13.2947, 97.5117)
+initialSong = ExtResource("33_8x80p")
+song = ExtResource("34_3lk2f")
 
 [node name="Node3D" parent="." instance=ExtResource("33_cryrh")]
 transform = Transform3D(0.404854, 0, 0.914381, 0, 1, 0, -0.914381, 0, 0.404854, -20.3073, 7.99902, 148.524)

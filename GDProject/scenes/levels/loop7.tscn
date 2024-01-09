@@ -1,7 +1,6 @@
-[gd_scene load_steps=56 format=3 uid="uid://djl3xdac8gffq"]
+[gd_scene load_steps=57 format=3 uid="uid://djl3xdac8gffq"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_8cqhk"]
-[ext_resource type="PackedScene" uid="uid://ptnvxoxyyjjp" path="res://scenes/levels/loop2.tscn" id="2_ptaq3"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="3_iovtu"]
 [ext_resource type="PackedScene" uid="uid://dypmthvkpx2xs" path="res://Pool-Pack/Objects/floor.tscn" id="5_pmhhi"]
 [ext_resource type="PackedScene" uid="uid://c7tqa8mbld8at" path="res://Pool-Pack/Objects/wall.tscn" id="6_g7rs8"]
@@ -25,7 +24,9 @@
 [ext_resource type="Script" path="res://scripts/door.gd" id="23_t65ou"]
 [ext_resource type="AudioStream" uid="uid://mrnmpvmb22p5" path="res://assets/audio/effects/fadeSound.wav" id="24_4qrtb"]
 [ext_resource type="AudioStream" uid="uid://bruqheud0xugd" path="res://assets/audio/effects/knob.wav" id="25_6gaht"]
+[ext_resource type="Script" path="res://scripts/tunnelMusic.gd" id="26_0j7we"]
 [ext_resource type="AudioStream" uid="uid://cjrarcaom2jpa" path="res://assets/audio/effects/squeak.wav" id="26_h4c2j"]
+[ext_resource type="AudioStream" uid="uid://beqvg4uw21nie" path="res://assets/audio/music/Tunnel track mp3.mp3" id="27_okyem"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
 panorama = ExtResource("3_iovtu")
@@ -176,10 +177,9 @@ size = Vector3(1, 1, 1.935)
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.941637, 33.4285, 161.829)
 script = ExtResource("1_8cqhk")
-nextLoop = ExtResource("2_ptaq3")
 
 [node name="StartingPos" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141.945, -31.9396, 118.211)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.035, -2.96943, 111.811)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vixii")
@@ -2001,12 +2001,13 @@ bus = &"Effects"
 [node name="Door" parent="." instance=ExtResource("20_1e648")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -145.883, -32.9476, 117.664)
 
-[node name="Area3D" type="Area3D" parent="Door" node_paths=PackedStringArray("door", "white")]
+[node name="Area3D" type="Area3D" parent="Door" node_paths=PackedStringArray("door", "white", "music")]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("23_t65ou")
 door = NodePath("..")
 white = NodePath("../../MeshInstance3D")
+music = NodePath("../../music")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121155, 1.30835, 0.016983)
@@ -2049,3 +2050,17 @@ skeleton = NodePath("../../Door")
 transform = Transform3D(0.499057, 0, 3.55271e-15, 0, 4.01737, 0, 1.77636e-15, 0, 1.24025, -0.704023, 2.36059, 0.0613327)
 mesh = SubResource("BoxMesh_phvq3")
 skeleton = NodePath("../../Door")
+
+[node name="music" type="Node3D" parent="."]
+script = ExtResource("26_0j7we")
+
+[node name="begin" type="Node3D" parent="music"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.7977, -32.4403, 117.625)
+
+[node name="end" type="Node3D" parent="music"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -182.286, -32.4403, 117.625)
+
+[node name="music" type="AudioStreamPlayer" parent="music"]
+stream = ExtResource("27_okyem")
+volume_db = -50.0
+autoplay = true
