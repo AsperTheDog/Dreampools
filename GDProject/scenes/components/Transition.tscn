@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnbh78wm2u7q5"]
+[gd_scene load_steps=5 format=3 uid="uid://bnbh78wm2u7q5"]
 
 [ext_resource type="Script" path="res://scripts/Transition.gd" id="1_2dufy"]
+[ext_resource type="PackedScene" uid="uid://jqxmtro6bi7n" path="res://scenes/levels/end.tscn" id="2_kfgxd"]
 
 [sub_resource type="Curve" id="Curve_tye0s"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.09, 0), 0.0, 0.0, 0, 0, Vector2(0.192412, 0.136364), 0.0, 0.0, 0, 0, Vector2(0.271003, 0.1), 0.0, 0.0, 0, 0, Vector2(0.403794, 0.1), 0.0, 0.0, 0, 0, Vector2(0.46477, 0.0727272), 0.0, 0.0, 0, 0, Vector2(0.705962, 0.672727), 2.51269, 2.51269, 0, 0, Vector2(0.996956, 1), 0.0, 0.0, 0, 0]
@@ -34,3 +35,15 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="fade2" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="End" parent="." instance=ExtResource("2_kfgxd")]
+visible = false
+layout_mode = 1

@@ -5,6 +5,9 @@ func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	Transition.doTransition(Transition.Type.FADE, true, 3, true)
 	create_tween().tween_method(func(value): $ambient.volume_db = linear_to_db(value), 0.0, 1.0, 3.0)
+	MainCharacter.reset()
+	Letters.firstLetterShown = false
+	Letters.currentLetter = ""
 
 
 func _process(delta: float):

@@ -3,7 +3,8 @@ extends Control
 signal transitionFinished
 
 enum Type {
-	FADE
+	FADE,
+	WHITE_FADE
 }
 
 @export var folksCurve: Curve
@@ -12,7 +13,8 @@ enum Type {
 var currentTween: Tween = null
 var masterValue: float = 0
 @onready var transitions = {
-	Type.FADE: [_fade, $CanvasLayer/fade]
+	Type.FADE: [_fade, $CanvasLayer/fade],
+	Type.WHITE_FADE: [_whiteFade, $CanvasLayer/fade2]
 }
 
 
@@ -51,3 +53,12 @@ func _execTransFunc(value: float, transFunc: Callable):
 
 func _fade(value: float):
 	$CanvasLayer/fade.color.a = 1 - ease(value, -2)
+
+
+func _whiteFade(value: float):
+	$CanvasLayer/fade2.color.a = 1 - ease(value, -2)
+
+
+func end():
+	$End.show()
+	$End.end()

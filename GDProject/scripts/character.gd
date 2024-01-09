@@ -53,6 +53,8 @@ func _ready():
 
 
 func _process(delta: float):
+	if Input.is_action_just_pressed("ui_accept"):
+		print(global_position)
 	if visible and Input.is_action_just_pressed("pause") and not Letters.visible: 
 		if not $Pause.paused:
 			$Pause.paused = true
@@ -195,6 +197,18 @@ func showCrouchPrompt():
 	$Control/AnimationPlayer.play("crouchPrompt")
 	await get_tree().create_timer(4).timeout
 	$Control/Button3.hide()
+
+
+func endGame():
+	trackInput = false
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	$Pause.hide()
+	$Control.hide()
+
+
+func reset():
+	$Control.show()
+	hasShownCrouch = false
 
 
 func _on_visibility_changed():

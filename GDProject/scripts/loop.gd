@@ -30,3 +30,16 @@ func _process(_delta):
 
 func playSubtitle(subtitle: String):
 	Subtitles.startSubtitle(subtitle)
+
+
+func tpToFinalLoop():
+	Transition.doTransition(Transition.Type.WHITE_FADE, false, 3, true)
+	await Transition.transitionFinished
+	get_tree().change_scene_to_file("res://scenes/levels/loop8.tscn")
+
+
+func endGame():
+	MainCharacter.endGame()
+	Transition.doTransition(Transition.Type.FADE, false, 3, true)
+	await Transition.transitionFinished
+	Transition.end()
