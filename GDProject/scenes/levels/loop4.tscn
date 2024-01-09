@@ -1,4 +1,4 @@
-[gd_scene load_steps=106 format=3 uid="uid://1alphowm0se6"]
+[gd_scene load_steps=108 format=3 uid="uid://1alphowm0se6"]
 
 [ext_resource type="Script" path="res://scripts/loop.gd" id="1_1vany"]
 [ext_resource type="PackedScene" uid="uid://ybqotrot4m81" path="res://scenes/levels/loop5.tscn" id="2_s7dqg"]
@@ -9,7 +9,7 @@
 [ext_resource type="Shader" uid="uid://bg4e6jb3sk0f7" path="res://environment/WaterShader.tres" id="7_16sx3"]
 [ext_resource type="PackedScene" uid="uid://chpegmwiicvdx" path="res://Pool-Pack/Objects/pool_border_lat_no_floor.tscn" id="8_2w0xc"]
 [ext_resource type="PackedScene" uid="uid://bg3f525w7gkea" path="res://Pool-Pack/Objects/cave.tscn" id="9_2mj10"]
-[ext_resource type="Material" uid="uid://ck85866uy8m40" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="10_367kq"]
+[ext_resource type="Material" path="res://Pool-Pack/Models/pool-texture-concrete.tres" id="10_367kq"]
 [ext_resource type="PackedScene" uid="uid://c04h4406ggm3v" path="res://Pool-Pack/Objects/wall_cave.tscn" id="11_8wxo3"]
 [ext_resource type="PackedScene" uid="uid://bxon1rgthtgey" path="res://Pool-Pack/Objects/wall_border.tscn" id="12_4u4a1"]
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="13_hxuc4"]
@@ -241,6 +241,12 @@ size = Vector3(47.1408, 5.63129, 9.5964)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jbbcj"]
 size = Vector3(0.233579, 4.68772, 71.5661)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p5r6f"]
+size = Vector3(3, 3, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_27jan"]
+size = Vector3(3, 3, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ic5yb"]
 size = Vector3(0.233579, 4.68772, 5.1273)
@@ -2970,6 +2976,20 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.923
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1442, 2.31086, 3.06349)
 shape = SubResource("BoxShape3D_jbbcj")
+
+[node name="StaticBody3D48" type="StaticBody3D" parent="Hitboxes"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.9237, 9.02939, 145.755)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.754, 1.43307, -24.0895)
+shape = SubResource("BoxShape3D_p5r6f")
+
+[node name="StaticBody3D49" type="StaticBody3D" parent="Hitboxes"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.9237, 9.02939, 145.755)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.754, 1.433, 13.93)
+shape = SubResource("BoxShape3D_27jan")
 
 [node name="StaticBody3D21" type="StaticBody3D" parent="Hitboxes"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -57.115, 9.02939, 145.755)
