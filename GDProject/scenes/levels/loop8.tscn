@@ -302,6 +302,7 @@ light_color = Color(1, 0.968627, 0.933333, 1)
 light_energy = 4.0
 shadow_enabled = true
 shadow_blur = 0.412
+directional_shadow_max_distance = 150.0
 
 [node name="beginning" type="Node3D" parent="."]
 

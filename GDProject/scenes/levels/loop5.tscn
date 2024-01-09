@@ -314,7 +314,7 @@ size = Vector3(12.6518, 6.27867, 12.0207)
 size = Vector3(0.995758, 2.14832, 3.29821)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dwcao"]
-size = Vector3(7.11099, 3.13599, 10.6863)
+size = Vector3(13.0303, 3.13599, 10.6863)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7yn8u"]
 size = Vector3(7.60874, 3.38452, 16.1599)
@@ -354,6 +354,7 @@ light_color = Color(1, 0.968627, 0.933333, 1)
 light_energy = 3.0
 shadow_enabled = true
 shadow_blur = 0.412
+directional_shadow_max_distance = 150.0
 
 [node name="beginning" type="Node3D" parent="."]
 
@@ -3186,7 +3187,7 @@ shape = SubResource("BoxShape3D_8el1f")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3858, 9.53001, 154.388)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hitboxes/StaticBody3D38"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4043, -2.12039, 6.84396)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.364, -2.1204, 6.84396)
 shape = SubResource("BoxShape3D_dwcao")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Hitboxes/StaticBody3D38"]

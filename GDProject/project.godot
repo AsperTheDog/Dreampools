@@ -13,6 +13,7 @@ config_version=5
 config/name="Dreampools"
 run/main_scene="res://scenes/levels/mainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 
 [autoload]
 

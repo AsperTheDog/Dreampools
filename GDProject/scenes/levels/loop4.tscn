@@ -334,6 +334,7 @@ light_energy = 3.0
 shadow_enabled = true
 shadow_bias = 0.3
 shadow_blur = 0.412
+directional_shadow_max_distance = 150.0
 
 [node name="beginning" type="Node3D" parent="."]
 
@@ -2685,6 +2686,10 @@ mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D23" type="MeshInstance3D" parent="Occlusion"]
 transform = Transform3D(-1, 0, -3.35286e-06, 0, 22.4259, 0, 8.74228e-08, 0, -38.3522, 48.797, 11.1652, 154.258)
+mesh = SubResource("BoxMesh_smd1b")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Occlusion"]
+transform = Transform3D(-1, 0, -3.35286e-06, 0, 22.4259, 0, 8.74228e-08, 0, -38.3522, 30.0629, -3.2262, 132.776)
 mesh = SubResource("BoxMesh_smd1b")
 
 [node name="MeshInstance3D24" type="MeshInstance3D" parent="Occlusion"]

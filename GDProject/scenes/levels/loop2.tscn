@@ -326,6 +326,7 @@ light_energy = 3.0
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 0.412
+directional_shadow_max_distance = 150.0
 
 [node name="beginning" type="Node3D" parent="."]
 
