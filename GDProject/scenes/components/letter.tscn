@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cihauqiheuvyw" path="res://Pool-Pack/Models/letter.glb" id="1_qxe1y"]
 [ext_resource type="PackedScene" uid="uid://b7cmwxdkvvj7r" path="res://assets/models/table.glb" id="2_c6oxl"]
-[ext_resource type="Script" path="res://scripts/letter.gd" id="3_ta78o"]
+[ext_resource type="Script" uid="uid://deuk3sjlccanx" path="res://scripts/letter.gd" id="3_ta78o"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_drww7"]
 size = Vector3(0.824898, 0.442871, 0.985826)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=71 format=3 uid="uid://swtlk0h0p5ki"]
 
-[ext_resource type="Script" path="res://scripts/loop.gd" id="1_j3ovf"]
+[ext_resource type="Script" uid="uid://v1g0bipw52t1" path="res://scripts/loop.gd" id="1_j3ovf"]
 [ext_resource type="PackedScene" uid="uid://djl3xdac8gffq" path="res://scenes/levels/loop7.tscn" id="2_6qivg"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="3_wujyo"]
 [ext_resource type="PackedScene" uid="uid://e0e14tpuqxv8" path="res://Pool-Pack/Objects/stairs.tscn" id="4_b2oik"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="13_v8ot1"]
 [ext_resource type="PackedScene" uid="uid://bbxtjwgb87j1y" path="res://Pool-Pack/Objects/column_cilinder.tscn" id="14_s0fnw"]
 [ext_resource type="PackedScene" uid="uid://m3mm4l2vfwme" path="res://Pool-Pack/Objects/wall_medium.tscn" id="15_7sjhg"]
-[ext_resource type="Shader" path="res://environment/sky.gdshader" id="16_vp674"]
+[ext_resource type="Shader" uid="uid://dk6i8q5vjs456" path="res://environment/sky.gdshader" id="16_vp674"]
 [ext_resource type="PackedScene" uid="uid://ie3judry7q06" path="res://Pool-Pack/Objects/wall_windows_circle.tscn" id="17_kiavq"]
 [ext_resource type="PackedScene" uid="uid://b2vp4yvtgg6q7" path="res://Pool-Pack/Objects/cave_intersection.tscn" id="18_vyfdb"]
 [ext_resource type="PackedScene" uid="uid://bp7cal0oana7j" path="res://Pool-Pack/Objects/bridge.tscn" id="20_1jnm0"]
@@ -79,8 +79,8 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_vp674")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(5.85, 0)
 shader_parameter/environmentMap = ExtResource("3_wujyo")
+shader_parameter/rotation = Vector2(5.85, 0)
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 0.2
 shader_parameter/contrast = 1.0

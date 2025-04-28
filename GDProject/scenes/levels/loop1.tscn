@@ -1,6 +1,6 @@
 [gd_scene load_steps=97 format=3 uid="uid://cyuh84seks261"]
 
-[ext_resource type="Script" path="res://scripts/loop.gd" id="1_6qplw"]
+[ext_resource type="Script" uid="uid://v1g0bipw52t1" path="res://scripts/loop.gd" id="1_6qplw"]
 [ext_resource type="PackedScene" uid="uid://ptnvxoxyyjjp" path="res://scenes/levels/loop2.tscn" id="2_44xxq"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="2_cjgr5"]
 [ext_resource type="PackedScene" uid="uid://e0e14tpuqxv8" path="res://Pool-Pack/Objects/stairs.tscn" id="3_egv1a"]
@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bbxtjwgb87j1y" path="res://Pool-Pack/Objects/column_cilinder.tscn" id="12_0vs0o"]
 [ext_resource type="PackedScene" uid="uid://m3mm4l2vfwme" path="res://Pool-Pack/Objects/wall_medium.tscn" id="13_oyiu3"]
 [ext_resource type="PackedScene" uid="uid://ie3judry7q06" path="res://Pool-Pack/Objects/wall_windows_circle.tscn" id="15_6icwn"]
-[ext_resource type="Shader" path="res://environment/sky.gdshader" id="16_dgftk"]
+[ext_resource type="Shader" uid="uid://dk6i8q5vjs456" path="res://environment/sky.gdshader" id="16_dgftk"]
 [ext_resource type="PackedScene" uid="uid://br3tvn385oogn" path="res://Pool-Pack/Objects/wall_door_big.tscn" id="16_hu8yr"]
 [ext_resource type="PackedScene" uid="uid://tc6e76qa6hjr" path="res://Pool-Pack/Objects/wall_medium_door.tscn" id="17_x5pun"]
 [ext_resource type="PackedScene" uid="uid://bp7cal0oana7j" path="res://Pool-Pack/Objects/bridge.tscn" id="18_ojxjn"]
@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://4ds728y5wmhk" path="res://Pool-Pack/Objects/column_square.tscn" id="22_q2fk1"]
 [ext_resource type="PackedScene" uid="uid://b6ehiew7bohw2" path="res://Pool-Pack/Objects/wall_windows_long.tscn" id="23_dr8xa"]
 [ext_resource type="PackedScene" uid="uid://deqfcbrtar21p" path="res://Pool-Pack/Objects/pool_border_int.tscn" id="24_lbpct"]
-[ext_resource type="Script" path="res://scripts/crouch.gd" id="27_kwsv0"]
+[ext_resource type="Script" uid="uid://dvwchjou0lb6o" path="res://scripts/crouch.gd" id="27_kwsv0"]
 [ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="28_avb7p"]
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="29_n06aa"]
 
@@ -86,8 +86,8 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_dgftk")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(0, 0)
 shader_parameter/environmentMap = ExtResource("2_cjgr5")
+shader_parameter/rotation = Vector2(0, 0)
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 0.465
 shader_parameter/contrast = 1.0

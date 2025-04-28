@@ -1,6 +1,6 @@
 [gd_scene load_steps=57 format=3 uid="uid://djl3xdac8gffq"]
 
-[ext_resource type="Script" path="res://scripts/loop.gd" id="1_8cqhk"]
+[ext_resource type="Script" uid="uid://v1g0bipw52t1" path="res://scripts/loop.gd" id="1_8cqhk"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="3_iovtu"]
 [ext_resource type="PackedScene" uid="uid://dypmthvkpx2xs" path="res://Pool-Pack/Objects/floor.tscn" id="5_pmhhi"]
 [ext_resource type="PackedScene" uid="uid://c7tqa8mbld8at" path="res://Pool-Pack/Objects/wall.tscn" id="6_g7rs8"]
@@ -15,16 +15,16 @@
 [ext_resource type="PackedScene" uid="uid://bgtu35ro16vu2" path="res://Pool-Pack/Objects/ceiling.tscn" id="15_05eby"]
 [ext_resource type="Material" uid="uid://cy88jvh54xmyp" path="res://Pool-Pack/Models/pool-texture-bricks.tres" id="15_i2i8d"]
 [ext_resource type="PackedScene" uid="uid://m3mm4l2vfwme" path="res://Pool-Pack/Objects/wall_medium.tscn" id="15_yqr8a"]
-[ext_resource type="Shader" path="res://environment/sky.gdshader" id="16_sckn4"]
+[ext_resource type="Shader" uid="uid://dk6i8q5vjs456" path="res://environment/sky.gdshader" id="16_sckn4"]
 [ext_resource type="PackedScene" uid="uid://b2vp4yvtgg6q7" path="res://Pool-Pack/Objects/cave_intersection.tscn" id="18_ey03c"]
 [ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="19_1s7ni"]
-[ext_resource type="Script" path="res://scripts/dialogueTrigger.gd" id="19_6l51h"]
+[ext_resource type="Script" uid="uid://dfjj1iqj1xju0" path="res://scripts/dialogueTrigger.gd" id="19_6l51h"]
 [ext_resource type="PackedScene" uid="uid://887kpg74l8b4" path="res://Pool-Pack/Objects/door-complete.tscn" id="20_1e648"]
-[ext_resource type="Script" path="res://scripts/DialogueContinuation.gd" id="20_5o8yl"]
-[ext_resource type="Script" path="res://scripts/door.gd" id="23_t65ou"]
+[ext_resource type="Script" uid="uid://chie4d8lo0w5q" path="res://scripts/DialogueContinuation.gd" id="20_5o8yl"]
+[ext_resource type="Script" uid="uid://bh5nub51xwsep" path="res://scripts/door.gd" id="23_t65ou"]
 [ext_resource type="AudioStream" uid="uid://mrnmpvmb22p5" path="res://assets/audio/effects/fadeSound.wav" id="24_4qrtb"]
 [ext_resource type="AudioStream" uid="uid://bruqheud0xugd" path="res://assets/audio/effects/knob.wav" id="25_6gaht"]
-[ext_resource type="Script" path="res://scripts/tunnelMusic.gd" id="26_0j7we"]
+[ext_resource type="Script" uid="uid://cc5xrk8lph3xc" path="res://scripts/tunnelMusic.gd" id="26_0j7we"]
 [ext_resource type="AudioStream" uid="uid://cjrarcaom2jpa" path="res://assets/audio/effects/squeak.wav" id="26_h4c2j"]
 [ext_resource type="AudioStream" uid="uid://beqvg4uw21nie" path="res://assets/audio/music/Tunnel track mp3.mp3" id="27_okyem"]
 
@@ -73,8 +73,8 @@ size = Vector3(106.91, 2.665, 1)
 render_priority = 0
 shader = ExtResource("16_sckn4")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(-6.5, 0.715)
 shader_parameter/environmentMap = ExtResource("3_iovtu")
+shader_parameter/rotation = Vector2(-6.5, 0.715)
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 1.4
 shader_parameter/contrast = 1.4

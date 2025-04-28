@@ -1,6 +1,6 @@
 [gd_scene load_steps=103 format=3 uid="uid://ptnvxoxyyjjp"]
 
-[ext_resource type="Script" path="res://scripts/loop.gd" id="1_4rs0r"]
+[ext_resource type="Script" uid="uid://v1g0bipw52t1" path="res://scripts/loop.gd" id="1_4rs0r"]
 [ext_resource type="PackedScene" uid="uid://culk6i08w2ki5" path="res://scenes/levels/loop3.tscn" id="2_0hwga"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="2_2g2v5"]
 [ext_resource type="PackedScene" uid="uid://e0e14tpuqxv8" path="res://Pool-Pack/Objects/stairs.tscn" id="3_vicha"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="12_bsp4x"]
 [ext_resource type="PackedScene" uid="uid://bbxtjwgb87j1y" path="res://Pool-Pack/Objects/column_cilinder.tscn" id="13_cwpsc"]
 [ext_resource type="PackedScene" uid="uid://m3mm4l2vfwme" path="res://Pool-Pack/Objects/wall_medium.tscn" id="14_w6vfi"]
-[ext_resource type="Shader" path="res://environment/sky.gdshader" id="16_2rge8"]
+[ext_resource type="Shader" uid="uid://dk6i8q5vjs456" path="res://environment/sky.gdshader" id="16_2rge8"]
 [ext_resource type="PackedScene" uid="uid://br3tvn385oogn" path="res://Pool-Pack/Objects/wall_door_big.tscn" id="17_gh4oc"]
 [ext_resource type="PackedScene" uid="uid://ie3judry7q06" path="res://Pool-Pack/Objects/wall_windows_circle.tscn" id="17_swhdm"]
 [ext_resource type="PackedScene" uid="uid://tc6e76qa6hjr" path="res://Pool-Pack/Objects/wall_medium_door.tscn" id="18_5t5ot"]
@@ -28,8 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://deqfcbrtar21p" path="res://Pool-Pack/Objects/pool_border_int.tscn" id="25_f63df"]
 [ext_resource type="AudioStream" uid="uid://buklnt8ywkdw2" path="res://assets/audio/effects/ambient.wav" id="26_d7c1r"]
 [ext_resource type="AudioStream" uid="uid://bx58pe17tjr1i" path="res://assets/audio/effects/ambientSmall.wav" id="27_5sw06"]
-[ext_resource type="Script" path="res://scripts/crouch.gd" id="27_rcqf8"]
-[ext_resource type="Script" path="res://scripts/dialogueTrigger.gd" id="28_evir5"]
+[ext_resource type="Script" uid="uid://dvwchjou0lb6o" path="res://scripts/crouch.gd" id="27_rcqf8"]
+[ext_resource type="Script" uid="uid://dfjj1iqj1xju0" path="res://scripts/dialogueTrigger.gd" id="28_evir5"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
 panorama = ExtResource("2_2g2v5")
@@ -87,8 +87,8 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_2rge8")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(-1.39, 0)
 shader_parameter/environmentMap = ExtResource("2_2g2v5")
+shader_parameter/rotation = Vector2(-1.39, 0)
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 1.415
 shader_parameter/contrast = 1.315

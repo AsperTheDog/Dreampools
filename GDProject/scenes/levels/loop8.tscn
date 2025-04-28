@@ -1,6 +1,6 @@
 [gd_scene load_steps=94 format=3 uid="uid://jell06wipwjx"]
 
-[ext_resource type="Script" path="res://scripts/loop.gd" id="1_dswu0"]
+[ext_resource type="Script" uid="uid://v1g0bipw52t1" path="res://scripts/loop.gd" id="1_dswu0"]
 [ext_resource type="Texture2D" uid="uid://baw4ey863fgjx" path="res://environment/AllSkyFree_Sky_EpicBlueSunset_Equirect.png" id="3_ijr8o"]
 [ext_resource type="PackedScene" uid="uid://e0e14tpuqxv8" path="res://Pool-Pack/Objects/stairs.tscn" id="4_hmvyp"]
 [ext_resource type="PackedScene" uid="uid://dypmthvkpx2xs" path="res://Pool-Pack/Objects/floor.tscn" id="5_3q3p4"]
@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://qpbmehbcg2n0" path="res://Pool-Pack/Objects/pool_border_lat.tscn" id="13_ea432"]
 [ext_resource type="PackedScene" uid="uid://bbxtjwgb87j1y" path="res://Pool-Pack/Objects/column_cilinder.tscn" id="14_jj3kh"]
 [ext_resource type="PackedScene" uid="uid://m3mm4l2vfwme" path="res://Pool-Pack/Objects/wall_medium.tscn" id="15_fj5om"]
-[ext_resource type="Shader" path="res://environment/sky.gdshader" id="16_8tla2"]
+[ext_resource type="Shader" uid="uid://dk6i8q5vjs456" path="res://environment/sky.gdshader" id="16_8tla2"]
 [ext_resource type="PackedScene" uid="uid://ie3judry7q06" path="res://Pool-Pack/Objects/wall_windows_circle.tscn" id="17_3o2jk"]
 [ext_resource type="PackedScene" uid="uid://br3tvn385oogn" path="res://Pool-Pack/Objects/wall_door_big.tscn" id="18_pym1c"]
 [ext_resource type="PackedScene" uid="uid://tc6e76qa6hjr" path="res://Pool-Pack/Objects/wall_medium_door.tscn" id="19_uah0d"]
@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://4ds728y5wmhk" path="res://Pool-Pack/Objects/column_square.tscn" id="24_7hy8h"]
 [ext_resource type="PackedScene" uid="uid://b6ehiew7bohw2" path="res://Pool-Pack/Objects/wall_windows_long.tscn" id="25_701y7"]
 [ext_resource type="PackedScene" uid="uid://deqfcbrtar21p" path="res://Pool-Pack/Objects/pool_border_int.tscn" id="26_tc1lx"]
-[ext_resource type="Script" path="res://scripts/crouch.gd" id="27_ekn74"]
+[ext_resource type="Script" uid="uid://dvwchjou0lb6o" path="res://scripts/crouch.gd" id="27_ekn74"]
 [ext_resource type="PackedScene" uid="uid://i7rutu4tqi28" path="res://scenes/components/letter.tscn" id="30_6ka6r"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o171r"]
@@ -84,8 +84,8 @@ size = Vector3(0.665, 0.55, 3)
 render_priority = 0
 shader = ExtResource("16_8tla2")
 shader_parameter/environment_multiplier = 1.0
-shader_parameter/rotation = Vector2(4.82, 0)
 shader_parameter/environmentMap = ExtResource("3_ijr8o")
+shader_parameter/rotation = Vector2(4.82, 0)
 shader_parameter/brightness = -0.095
 shader_parameter/saturation = 0.465
 shader_parameter/contrast = 1.0

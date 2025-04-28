@@ -206,9 +206,9 @@ operator = 2
 code = "shader_type spatial;
 render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
 
-global uniform float WaterSpeed = 1;
+global uniform float WaterSpeed = 1.0;
 uniform vec2 Size = vec2(1.000000, 1.000000);
-uniform float Scale = 1;
+uniform float Scale = 1.0;
 uniform sampler2D tex_vtx_2;
 uniform vec4 ColorParameter : source_color = vec4(0.298039, 1.000000, 1.000000, 1.000000);
 uniform sampler2D tex_frg_3;

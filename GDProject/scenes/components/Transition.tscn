@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bnbh78wm2u7q5"]
 
-[ext_resource type="Script" path="res://scripts/Transition.gd" id="1_2dufy"]
+[ext_resource type="Script" uid="uid://lty0jv3hdj53" path="res://scripts/Transition.gd" id="1_2dufy"]
 [ext_resource type="PackedScene" uid="uid://jqxmtro6bi7n" path="res://scenes/levels/end.tscn" id="2_kfgxd"]
 
 [sub_resource type="Curve" id="Curve_tye0s"]

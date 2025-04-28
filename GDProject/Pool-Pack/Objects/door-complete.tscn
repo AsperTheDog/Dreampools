@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://887kpg74l8b4"]
 
 [ext_resource type="PackedScene" uid="uid://w7wniy3sm6ig" path="res://Pool-Pack/Models/door-border.glb" id="1_c82wv"]
-[ext_resource type="Script" path="res://scripts/materialChanger.gd" id="1_un2gn"]
-[ext_resource type="Material" path="res://Pool-Pack/Models/door.tres" id="2_5fkuw"]
+[ext_resource type="Script" uid="uid://ba5453ob1t5ar" path="res://scripts/materialChanger.gd" id="1_un2gn"]
+[ext_resource type="Material" uid="uid://bvrnyayjseti7" path="res://Pool-Pack/Models/door.tres" id="2_5fkuw"]
 [ext_resource type="PackedScene" uid="uid://dtjp5vorbb42p" path="res://Pool-Pack/Models/door-galp.glb" id="2_oimxg"]
 [ext_resource type="PackedScene" uid="uid://de8j2oeafl4wv" path="res://Pool-Pack/Models/door.glb" id="3_hbxcn"]
 
@@ -44,8 +44,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 1.5, 1, 0, 0, 0, 1, 4.03333
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sydac"]
 _data = {
-"RESET": SubResource("Animation_3du8d"),
-"open-door": SubResource("Animation_xapg7")
+&"RESET": SubResource("Animation_3du8d"),
+&"open-door": SubResource("Animation_xapg7")
 }
 
 [node name="Door" type="Node3D"]
